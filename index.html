@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lettres d'Amour 💖 </title>
+  <!-- LOGO APP & FAVICON -->
+    <link rel="icon" type="image/svg+xml" href="logo.svg" />
+    <link rel="apple-touch-icon" href="logo.svg" />
+    <meta name="theme-color" content="#0f172a" />
+  
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Polices Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            cursive: ['Caveat', 'cursive'],
+            sans: ['Montserrat', 'sans-serif'],
+          },
+          colors: {
+            love: {
+              500: '#f43f5e',
+              600: '#e11d48',
+              700: '#be123c',
+              800: '#9f1239',
+              900: '#881337',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans min-h-screen flex flex-col justify-between relative overflow-x-hidden">
+
+  <!-- Arrière-plan animé de cœurs -->
+  <div class="hearts-bg fixed inset-0 pointer-events-none opacity-20 z-0">
+    <span class="heart">❤️</span>
+    <span class="heart">💖</span>
+    <span class="heart">💕</span>
+    <span class="heart">💗</span>
+  </div>
+
+  <!-- Barre de Navigation -->
+  <nav class="sticky top-0 z-40 bg-slate-950/80 backdrop-blur-md border-b border-slate-800 px-4 py-3">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-2 cursor-pointer" onclick="afficherPage('accueil')">
+        <span class="text-2xl">💌</span>
+        <span class="font-cursive text-2xl font-bold text-rose-400">Lettres d'Amour</span>
+      </div>
+      
+      <div class="flex items-center gap-4 text-xs font-semibold">
+        <button onclick="afficherPage('accueil')" class="hover:text-rose-400 transition-colors">Accueil</button>
+        <button onclick="afficherPage('catalogue')" class="px-3 py-1.5 bg-rose-600 hover:bg-rose-500 text-white rounded-lg transition-all shadow-md shadow-rose-950/50">
+          Catalogue
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= SECTION 1 : PAGE D'ACCUEIL ================= -->
+  <section id="page-accueil" class="z-10 flex-1 flex flex-col items-center justify-center text-center px-4 py-12 max-w-4xl mx-auto space-y-8">
+    <span class="inline-block px-4 py-1.5 rounded-full bg-rose-950/80 border border-rose-800/50 text-rose-300 text-xs font-semibold tracking-wider uppercase shadow-lg">
+      ✨ Des modèles uniques de lettre
+    </span>
+    
+    <h1 class="font-cursive text-6xl md:text-7xl text-rose-400 leading-tight drop-shadow-[0_0_20px_rgba(244,63,94,0.3)]">
+      Offrez une émotion inoubliable sous forme de lettre animée.
+    </h1>
+    
+    <p class="text-slate-400 text-sm md:text-base max-w-2xl leading-relaxed">
+      Choisissez parmi une vaste collection de déclarations poétiques, débloquez votre modèle préféré via Mobile Money pour seulement <strong class="text-rose-400">500 FCFA</strong> et partagez-le instantanément.
+    </p>
+
+    <div class="flex flex-col sm:flex-row gap-4 w-full justify-center max-w-sm">
+      <button onclick="afficherPage('catalogue')" class="py-3 px-8 bg-gradient-to-r from-rose-600 to-love-600 hover:from-rose-500 hover:to-love-500 text-white font-bold rounded-xl shadow-xl shadow-rose-950/60 transition-all transform hover:scale-105">
+        Explorer le Catalogue
+      </button>
+    </div>
+
+    <!-- Aperçu des catégories -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 w-full pt-8 text-left">
+      <div onclick="filtrerEtOuvrirCatalogue('amour')" class="p-4 bg-slate-900/60 border border-slate-800 rounded-xl hover:border-rose-500/50 cursor-pointer transition-all">
+        <div class="text-2xl mb-1">❤️</div>
+        <div class="text-xs font-bold text-slate-200">Déclarations</div>
+        <div class="text-[10px] text-slate-400">voir les modèles</div>
+      </div>
+      <div onclick="filtrerEtOuvrirCatalogue('pardon')" class="p-4 bg-slate-900/60 border border-slate-800 rounded-xl hover:border-rose-500/50 cursor-pointer transition-all">
+        <div class="text-2xl mb-1">🕊️</div>
+        <div class="text-xs font-bold text-slate-200">Pardons</div>
+        <div class="text-[10px] text-slate-400">voir les modèles</div>
+      </div>
+      <div onclick="filtrerEtOuvrirCatalogue('anniversaire')" class="p-4 bg-slate-900/60 border border-slate-800 rounded-xl hover:border-rose-500/50 cursor-pointer transition-all">
+        <div class="text-2xl mb-1">🎂</div>
+        <div class="text-xs font-bold text-slate-200">Anniversaires</div>
+        <div class="text-[10px] text-slate-400">voir les modèles</div>
+      </div>
+      <div onclick="filtrerEtOuvrirCatalogue('distance')" class="p-4 bg-slate-900/60 border border-slate-800 rounded-xl hover:border-rose-500/50 cursor-pointer transition-all">
+        <div class="text-2xl mb-1">✈️</div>
+        <div class="text-xs font-bold text-slate-200">Distance</div>
+        <div class="text-[10px] text-slate-400">voir les modèles</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 2 : PAGE CATALOGUE ================= -->
+  <section id="page-catalogue" class="hidden z-10 flex-1 max-w-6xl mx-auto w-full px-4 py-8 space-y-6">
+    
+    <div class="text-center space-y-2">
+      <h2 class="font-cursive text-4xl text-rose-400">Catalogue des Lettres</h2>
+      <p class="text-xs text-slate-400">Sélectionnez une case pour voir les détails ou achetez directement.</p>
+    </div>
+
+    <!-- Filtres & Barre de recherche -->
+    <div class="flex flex-col md:flex-row gap-3 items-center justify-between bg-slate-900/80 p-3 rounded-xl border border-slate-800">
+      <div class="flex gap-2 overflow-x-auto w-full md:w-auto" id="categories-tabs">
+        <!-- Généré par JS -->
+      </div>
+      
+      <input 
+        type="text" 
+        id="search-input" 
+        placeholder="🔍 Rechercher un mot-clé..." 
+        oninput="filtrerLettres()"
+        class="w-full md:w-64 bg-slate-950 border border-slate-800 rounded-lg px-3 py-1.5 text-xs text-slate-200 focus:outline-none focus:border-rose-500 transition-all"
+      />
+    </div>
+
+    <!-- Grille des cases (Cards) -->
+    <div id="letters-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+      <!-- 100+ cases injectées par JS -->
+    </div>
+  </section>
+
+  <!-- ================= MODALE INTERACTIVE / APERÇU DE LA LETTRE ================= -->
+  <div id="letter-modal" class="fixed inset-0 bg-slate-950/90 backdrop-blur-md z-50 hidden flex items-center justify-center p-4 overflow-y-auto">
+    <div class="bg-slate-900 border border-slate-800 w-full max-w-md rounded-2xl p-5 relative shadow-2xl space-y-4">
+      
+      <!-- Bouton Fermer la modale -->
+      <button onclick="fermerModale()" class="absolute top-3 right-3 text-slate-400 hover:text-white text-lg font-bold">✕</button>
+
+      <div class="text-center">
+        <h3 id="modal-title" class="font-cursive text-3xl text-rose-400">Titre de la Lettre</h3>
+        <span class="text-[11px] text-slate-400">Aperçu interactif de l'enveloppe</span>
+      </div>
+
+      <!-- Animation 3D Enveloppe -->
+      <div class="scene-enveloppe relative w-[280px] h-[190px] mx-auto my-6">
+        <div id="envelope" class="envelope relative w-full h-full bg-love-700 rounded-lg shadow-xl">
+          <div class="flap absolute top-0 left-0"></div>
+          
+          <div class="letter absolute bottom-2 left-2.5 w-[260px] h-[170px] bg-rose-50 text-slate-800 rounded p-3 flex flex-col justify-between text-center font-cursive text-base shadow-md">
+            <div class="text-left text-[9px] font-sans text-rose-800 font-bold uppercase" id="letter-dest">À : Mon Amour</div>
+            <div class="space-y-1 my-auto text-sm" id="letter-body"></div>
+            <div class="text-right text-[9px] font-sans text-rose-800 font-bold uppercase" id="letter-sender">De : Ton Âme Sœur</div>
+          </div>
+
+          <div class="pocket absolute bottom-0 left-0"></div>
+        </div>
+      </div>
+
+      <!-- Contrôles et Paiement -->
+      <div class="space-y-3 text-center">
+        <div id="block-locked" class="space-y-2">
+          <p class="text-xs text-slate-400">Tarif unique : <strong class="text-rose-400">500 FCFA</strong></p>
+          <button onclick="payerAvecChariow()" class="w-full py-2.5 bg-gradient-to-r from-rose-600 to-love-600 text-white font-bold rounded-xl shadow-lg text-xs">
+              Payer 500 FCFA 
+          </button>
+          
+        </div>
+
+        <div id="block-unlocked" class="hidden space-y-2">
+          <p class="text-xs text-emerald-400 font-medium">✨ Lettre débloquée !</p>
+          <div class="flex gap-2">
+            <button onclick="ouvrirEnveloppe()" class="flex-1 py-2 bg-rose-600 text-white font-semibold rounded-lg text-xs">💌 Ouvrir</button>
+            <button onclick="fermerEnveloppe()" class="flex-1 py-2 bg-slate-800 text-slate-300 font-semibold rounded-lg text-xs">🔒 Fermer</button>
+          </div>
+          
+          <button onclick="telechargerLettre()" class="w-full py-2 bg-rose-950/60 text-rose-200 border border-rose-800/40 font-medium rounded-lg text-xs flex items-center justify-center gap-1.5">
+            📥 Télécharger la lettre 
+          </button>
+
+          <button onclick="partagerSurWhatsApp()" class="w-full py-2 bg-emerald-700/30 text-emerald-300 border border-emerald-600/30 font-medium rounded-lg text-xs">
+            📲 Partager sur WhatsApp
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="text-center text-slate-600 text-xs py-4 border-t border-slate-900 mt-8 z-10">
+    &copy;        Lettres d'Amour
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
