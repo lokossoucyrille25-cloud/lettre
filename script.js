@@ -70,7 +70,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-1",
     titre: "L'attraction magnétique",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-1",
+    lienChariow: "https://chariow.com/p/https://lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -90,7 +90,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-2",
     titre: "La promesse d'une aventure",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-2",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -110,7 +110,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-3",
     titre: "Le feu couvant",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-3",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -130,7 +130,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-4",
     titre: "L'aveu passionné",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-4",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -150,7 +150,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-5",
     titre: "Le charme irrésistible",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-5",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -170,7 +170,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-6",
     titre: "L'envoûtement velouté",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-6",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -190,7 +190,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-7",
     titre: "Le vertige des sens",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-7",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -210,7 +210,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-8",
     titre: "La douce obsession",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-8",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -230,7 +230,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-9",
     titre: "L'étincelle nocturne",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-9",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -250,7 +250,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-10",
     titre: "L'ivresse des mots",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-10",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -270,7 +270,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-11",
     titre: "La symphonie du désir",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-11",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -290,7 +290,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-12",
     titre: "L'art d'aimer",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-12",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -310,7 +310,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-13",
     titre: "Le souffle court",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-13",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -330,7 +330,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-14",
     titre: "Le magnétisme pur",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-14",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -350,7 +350,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-15",
     titre: "L'éternel frisson",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-15",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -370,7 +370,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-16",
     titre: "L'éclipse des sens",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-16",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -389,7 +389,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-17",
     titre: "Mélodie charnelle",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-17",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -408,7 +408,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-18",
     titre: "L'éclat du désir",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-18",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -427,7 +427,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-19",
     titre: "Symphonie nocturne",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-19",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -446,7 +446,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-20",
     titre: "L'étreinte du destin",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-20",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -465,7 +465,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-21",
     titre: "L'ivresse absolue",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-21",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -484,7 +484,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-22",
     titre: "Promesse d'éternité",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-22",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -503,7 +503,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-23",
     titre: "Frisson d'or",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-23",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -522,7 +522,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-24",
     titre: "L'alchimie secrète",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-24",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -541,7 +541,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-25",
     titre: "Rayon de passion",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-25",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -560,7 +560,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-26",
     titre: "Regard envoûtant",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-26",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -579,7 +579,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-27",
     titre: "Sous ton charme",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-27",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -598,7 +598,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-28",
     titre: "L'éveil des sentiments",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-28",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -617,7 +617,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-29",
     titre: "Douce tempête",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-29",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -636,7 +636,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-30",
     titre: "L'envol amoureux",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-30",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -655,7 +655,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-31",
     titre: "L'étincelle sacrée",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-31",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -674,7 +674,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-32",
     titre: "Reflet de passion",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-32",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -693,7 +693,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-33",
     titre: "L'ivresse des sens",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-33",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -712,7 +712,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-34",
     titre: "Douce fascination",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-34",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -731,7 +731,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-35",
     titre: "Le pacte secret",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-35",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -750,7 +750,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-36",
     titre: "Brise d'amour",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-36",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -769,7 +769,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-37",
     titre: "L'éclat d'une promesse",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-37",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -788,7 +788,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-38",
     titre: "Caresse veloutée",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-38",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -807,7 +807,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-39",
     titre: "Cœur enflammé",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-39",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -826,7 +826,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-40",
     titre: "Aura mystique",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-40",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -845,7 +845,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-41",
     titre: "Vertige charnel",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-41",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -864,7 +864,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-42",
     titre: "L'horizon partagé",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-42",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -883,7 +883,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-43",
     titre: "Frisson nocturne",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-43",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -902,7 +902,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-44",
     titre: "Complicité pure",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-44",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -921,7 +921,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-45",
     titre: "L'élan passionné",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-45",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -940,7 +940,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-46",
     titre: "Sourire envoûtant",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-46",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -959,7 +959,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-47",
     titre: "Le feu intérieur",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-47",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -978,7 +978,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-48",
     titre: "Promesse d'ardeur",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-48",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -997,7 +997,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-49",
     titre: "Refuge d'amour",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-49",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1016,7 +1016,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-50",
     titre: "Murmure passionné",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-50",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1035,7 +1035,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-51",
     titre: "Attraction céleste",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-51",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1054,7 +1054,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-52",
     titre: "Captivante présence",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-52",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1073,7 +1073,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-53",
     titre: "Éclipse de tendresse",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-53",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1092,7 +1092,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-54",
     titre: "Mystère partagé",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-54",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1111,7 +1111,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-55",
     titre: "Séduction infinie",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-55",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1130,7 +1130,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-56",
     titre: "Souffle de désir",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-56",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1149,7 +1149,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-57",
     titre: "Pulsation secrète",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-57",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1168,7 +1168,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-58",
     titre: "Alliance des âmes",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-58",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1187,7 +1187,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-59",
     titre: "L'empreinte du cœur",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-59",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1206,7 +1206,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-60",
     titre: "Lumière incandescente",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-60",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1225,7 +1225,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-61",
     titre: "Volcan d'émotions",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-61",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1244,7 +1244,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-62",
     titre: "Ivresse nocturne",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-62",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1263,7 +1263,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-63",
     titre: "Tendresse captivante",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-63",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1282,7 +1282,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-64",
     titre: "Douce promesse",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-64",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1301,7 +1301,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-65",
     titre: "Rayon incandescent",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-65",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1320,7 +1320,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-66",
     titre: "Étreinte sacrée",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-66",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1339,7 +1339,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-67",
     titre: "Écho du cœur",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-67",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1358,7 +1358,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-68",
     titre: "Fleur de passion",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-68",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1377,7 +1377,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-69",
     titre: "Parfum d'éternité",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-69",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1396,7 +1396,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-70",
     titre: "L'étincelle retrouvée",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-70",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1415,7 +1415,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-71",
     titre: "Séduction veloutée",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-71",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1434,7 +1434,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-72",
     titre: "Magie du regard",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-72",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1453,7 +1453,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-73",
     titre: "Le vœu secret",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-73",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1472,7 +1472,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-74",
     titre: "Flamme éternelle",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-74",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1491,7 +1491,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-75",
     titre: "Complicité troublante",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-75",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1510,7 +1510,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-76",
     titre: "Douce ivresse",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-76",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1529,7 +1529,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-77",
     titre: "Cœur subjugué",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-77",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1548,7 +1548,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-78",
     titre: "Souffle d'amour",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-78",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1567,7 +1567,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-79",
     titre: "Trésor caché",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-79",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1586,7 +1586,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-80",
     titre: "L'élan du cœur",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-80",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1605,7 +1605,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-81",
     titre: "Murmure d'étoile",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-81",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1624,7 +1624,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-82",
     titre: "L'aurore de tes yeux",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-82",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1643,7 +1643,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-83",
     titre: "Océan de désir",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-83",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1662,7 +1662,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-84",
     titre: "Passion indomptable",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-84",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1681,7 +1681,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-85",
     titre: "Le vertige des mots",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-85",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1700,7 +1700,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-86",
     titre: "Charme captivant",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-86",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1719,7 +1719,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-87",
     titre: "L'étreinte d'or",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-87",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1738,7 +1738,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-88",
     titre: "Secret partagé",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-88",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1757,7 +1757,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-89",
     titre: "Reflet d'amour",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-89",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1776,7 +1776,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-90",
     titre: "Brise de passion",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-90",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1795,7 +1795,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-91",
     titre: "L'infini à deux",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-91",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1814,7 +1814,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-92",
     titre: "Douce obsession",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-92",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1833,7 +1833,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-93",
     titre: "Éclair de désir",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-93",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1852,7 +1852,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-94",
     titre: "Symphonie des sens",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-94",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1871,7 +1871,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-95",
     titre: "Rayon de grâce",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-95",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1890,7 +1890,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-96",
     titre: "L'empreinte d'une caresse",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-96",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1909,7 +1909,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-97",
     titre: "Cœur captif",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-97",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1928,7 +1928,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-98",
     titre: "Magie charnelle",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-98",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1947,7 +1947,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-99",
     titre: "L'éternel retour",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-99",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1966,7 +1966,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-100",
     titre: "Sommet de passion",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-100",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -1985,7 +1985,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-101",
     titre: "Éclat d'éternité",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-101",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2002,7 +2002,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-102",
     titre: "Douce complice",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-102",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2019,7 +2019,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-103",
     titre: "Promesse des jours",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-103",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2036,7 +2036,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-104",
     titre: "Horizon d'amour",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-104",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2053,7 +2053,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-105",
     titre: "Clarté de l'âme",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-105",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2070,7 +2070,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-106",
     titre: "Rayon de poésie",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-106",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2087,7 +2087,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-107",
     titre: "Parfum de passion",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-107",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2104,7 +2104,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-108",
     titre: "Refuge des sentiments",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-108",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2121,7 +2121,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-109",
     titre: "Harmonie parfaite",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-109",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2138,7 +2138,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-110",
     titre: "Regard captif",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-110",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2155,7 +2155,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-111",
     titre: "Étoile du soir",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-111",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2172,7 +2172,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-112",
     titre: "Tendres murmures",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-112",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2189,7 +2189,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-113",
     titre: "Sensation pure",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-113",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2206,7 +2206,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-114",
     titre: "Le feu des mots",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-114",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2223,7 +2223,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-115",
     titre: "Étrange alchimie",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-115",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2240,7 +2240,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-116",
     titre: "Serment du cœur",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-116",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2257,7 +2257,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-117",
     titre: "L'envol passionné",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-117",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2274,7 +2274,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-118",
     titre: "Lumière d'été",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-118",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2291,7 +2291,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-119",
     titre: "Sourire enchanteur",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-119",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2308,7 +2308,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-120",
     titre: "Joyau secret",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-120",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2325,7 +2325,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-121",
     titre: "Énergie vitale",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-121",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2342,7 +2342,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-122",
     titre: "Douce melodie",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-122",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2359,7 +2359,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-123",
     titre: "Reflet de passion",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-123",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2376,7 +2376,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-124",
     titre: "Baiser volé",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-124",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2393,7 +2393,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-125",
     titre: "Cœur nomade",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-125",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2410,7 +2410,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-126",
     titre: "Douce renaissance",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-126",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2427,7 +2427,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-127",
     titre: "Alliance des âmes",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-127",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2444,7 +2444,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-128",
     titre: "Étoile du matin",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-128",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2461,7 +2461,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-129",
     titre: "Vertige d'amour",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-129",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2478,7 +2478,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-130",
     titre: "Refuge d'or",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-130",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2495,7 +2495,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-131",
     titre: "Source de joie",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-131",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2512,7 +2512,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-132",
     titre: "Regard d'ange",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-132",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2529,7 +2529,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-133",
     titre: "Symphonie passionnée",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-133",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2546,7 +2546,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-134",
     titre: "Caresse d'or",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-134",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2563,7 +2563,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-135",
     titre: "Secret du bonheur",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-135",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2580,7 +2580,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-136",
     titre: "Brise d'espoir",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-136",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2597,7 +2597,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-137",
     titre: "Éclat divin",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-137",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2614,7 +2614,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-138",
     titre: "Océan de douceur",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-138",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2631,7 +2631,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-139",
     titre: "Le pacte des cœurs",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-139",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2648,7 +2648,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-140",
     titre: "Ferveur éternelle",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-140",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2665,7 +2665,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-141",
     titre: "Ciel étoilé",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-141",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2682,7 +2682,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-142",
     titre: "Sourire complice",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-142",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2699,7 +2699,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-143",
     titre: "Magie du cœur",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-143",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2716,7 +2716,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-144",
     titre: "Douce empreinte",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-144",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2733,7 +2733,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-145",
     titre: "Élan de ferveur",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-145",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2750,7 +2750,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-146",
     titre: "Flamme d'or",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-146",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2767,7 +2767,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-147",
     titre: "Oasis de paix",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-147",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2784,7 +2784,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-148",
     titre: "Charme éternel",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-148",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2801,7 +2801,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-149",
     titre: "Cœur passionné",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-149",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2818,7 +2818,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-150",
     titre: "Trésor du cœur",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-150",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2835,7 +2835,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-151",
     titre: "Sourire céleste",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-151",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2852,7 +2852,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-152",
     titre: "Goutte de rosée",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-152",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2869,7 +2869,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-153",
     titre: "Mélodie de l'âme",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-153",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2886,7 +2886,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-154",
     titre: "Lueur d'espoir",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-154",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2903,7 +2903,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-155",
     titre: "Souffle de liberté",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-155",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2920,7 +2920,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-156",
     titre: "Perle de rosée",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-156",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2937,7 +2937,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-157",
     titre: "Étoile guidante",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-157",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2954,7 +2954,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-158",
     titre: "Promesse éternelle",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-158",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2971,7 +2971,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-159",
     titre: "Doux frisson",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-159",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -2988,7 +2988,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-160",
     titre: "Rayo de soleil",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-160",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3005,7 +3005,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-161",
     titre: "Étreinte passionnée",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-161",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3039,7 +3039,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-163",
     titre: "Cœur complice",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-163",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3056,7 +3056,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-164",
     titre: "Source de lumière",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-164",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3073,7 +3073,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-165",
     titre: "Vertige passionné",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-165",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3090,7 +3090,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-166",
     titre: "Douce promesse",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-166",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3107,7 +3107,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-167",
     titre: "Reflet du bonheur",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-167",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3124,7 +3124,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-168",
     titre: "Lueur éternelle",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-168",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3141,7 +3141,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-169",
     titre: "Magie de l'instant",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-169",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3158,7 +3158,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-170",
     titre: "Alliance immortelle",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-170",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3175,7 +3175,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-171",
     titre: "Lune d'argent",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-171",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3192,7 +3192,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-172",
     titre: "Éveil des sens",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-172",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3209,7 +3209,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-173",
     titre: "Doux parfum",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-173",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3226,7 +3226,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-174",
     titre: "L'étoile polaire",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-174",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3243,7 +3243,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-175",
     titre: "Rayon de magie",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-175",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3260,7 +3260,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-176",
     titre: "L'abri des cœurs",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-176",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3277,7 +3277,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-177",
     titre: "Cœur captivé",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-177",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3294,7 +3294,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-178",
     titre: "Feu passionné",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-178",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3311,7 +3311,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-179",
     titre: "Refuge de tendresse",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-179",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3328,7 +3328,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-180",
     titre: "Le vœu accompli",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-180",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3345,7 +3345,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-181",
     titre: "Ciel de passion",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-181",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3362,7 +3362,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-182",
     titre: "Parfum d'amour",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-182",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3379,7 +3379,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-183",
     titre: "Éclat d'espoir",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-183",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3396,7 +3396,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-184",
     titre: "Murmure romantique",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-184",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3413,7 +3413,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-185",
     titre: "Goutte de lumière",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-185",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3430,7 +3430,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-186",
     titre: "Étreinte d'amour",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-186",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3447,7 +3447,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-187",
     titre: "Trésor éternel",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-187",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3464,7 +3464,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-188",
     titre: "Lueur de passion",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-188",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3481,7 +3481,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-189",
     titre: "Soleil couchant",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-189",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3498,7 +3498,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-190",
     titre: "Alliance des cœurs",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-190",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3515,7 +3515,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-191",
     titre: "Étoile filante",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-191",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3532,7 +3532,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-192",
     titre: "Douce alchimie",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-192",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3549,7 +3549,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-193",
     titre: "Caresse d'amour",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-193",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3566,7 +3566,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-194",
     titre: "Refuge d'amour",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-194",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3583,7 +3583,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-195",
     titre: "Sourire radieux",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-195",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3600,7 +3600,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-196",
     titre: "Ferveur du cœur",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-196",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3617,7 +3617,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-197",
     titre: "Lune de passion",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-197",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3634,7 +3634,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-198",
     titre: "Doux mystère",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-198",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3651,7 +3651,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-199",
     titre: "Trésor d'éternité",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-199",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3668,7 +3668,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "amour-200",
     titre: "Apogée de l'amour",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-200",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3692,7 +3692,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-1",
     titre: "Écho de mon regret",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-1",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3714,7 +3714,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-2",
     titre: "La promesse d'un renouveau",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-2",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3735,7 +3735,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-3",
     titre: "Lumière après l'orage",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-3",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3756,7 +3756,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-4",
     titre: "Au nom de notre amour",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-4",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3777,7 +3777,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-5",
     titre: "Clarté et repentir",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-5",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3798,7 +3798,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-6",
     titre: "Refuge de paix",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-6",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3818,7 +3818,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-7",
     titre: "Sincérité retrouvée",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-7",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3839,7 +3839,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-8",
     titre: "Patience et dévotion",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-8",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3878,7 +3878,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-10",
     titre: "Renaissance d'espoir",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-10",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3898,7 +3898,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-11",
     titre: "L'appel de mon cœur",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-11",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3918,7 +3918,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-12",
     titre: "Un souffle d'apaisement",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-12",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3939,7 +3939,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-13",
     titre: "Au-delà des mots",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-13",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3957,7 +3957,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-14",
     titre: "Mon humble aveu",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-14",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3979,7 +3979,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-15",
     titre: "Sérénité promise",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-15",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -3998,7 +3998,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-16",
     titre: "Pour un nouveau départ",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-16",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4018,7 +4018,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-17",
     titre: "La clarté des sentiments",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-17",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4039,7 +4039,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-18",
     titre: "Sur le chemin de ton cœur",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-18",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4057,7 +4057,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-19",
     titre: "L'amour plus fort que tout",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-19",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4080,7 +4080,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-20",
     titre: "Au creux de tes bras",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-20",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4099,7 +4099,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-21",
     titre: "Un vœu de sincérité",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-21",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4119,7 +4119,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-22",
     titre: "Effacer la peine",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-22",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4137,7 +4137,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-23",
     titre: "Douce réconciliation",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-23",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4159,7 +4159,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-24",
     titre: "L'empreinte de mon regret",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-24",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4178,7 +4178,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-25",
     titre: "La force de s'excuser",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-25",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4199,7 +4199,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-26",
     titre: "Retrouver notre étoile",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-26",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4219,7 +4219,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-27",
     titre: "Présence et tendresse",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-27",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4237,7 +4237,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-28",
     titre: "Mon alliance de cœur",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-28",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4261,7 +4261,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-29",
     titre: "Un havre de pardon",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-29",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4280,7 +4280,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-30",
     titre: "Mille excuses sincères",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-30",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4300,7 +4300,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-31",
     titre: "Soleil de ma vie",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-31",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4318,7 +4318,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-32",
     titre: "Éliminer les ombres",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-32",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4339,7 +4339,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-33",
     titre: "La voix de l'amour",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-33",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4358,7 +4358,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-34",
     titre: "Vérité et repentir",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-34",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4380,7 +4380,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-35",
     titre: "Pardon du fond de l'âme",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-35",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4398,7 +4398,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-36",
     titre: "Ton sourire retrouvé",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-36",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4418,7 +4418,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-37",
     titre: "L'engagement d'un cœur",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-37",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4439,7 +4439,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-38",
     titre: "Le poids du silence",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-38",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4458,7 +4458,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-39",
     titre: "Harmonie regagnée",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-39",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4476,7 +4476,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-40",
     titre: "Mon éternel pardon",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-40",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4499,7 +4499,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-41",
     titre: "Éveil de la bienveillance",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-41",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4520,7 +4520,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-42",
     titre: "Douceur retrouvée",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-42",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4539,7 +4539,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-43",
     titre: "L'écho du repentir",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-43",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4558,7 +4558,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-44",
     titre: "Un horizon d'espoir",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-44",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4578,7 +4578,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-45",
     titre: "Sincérité retrouvée",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-45",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4597,7 +4597,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-46",
     titre: "L'alliance de nos cœurs",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-46",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4616,7 +4616,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-47",
     titre: "Rayon de pardon",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-47",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4636,7 +4636,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-48",
     titre: "Un vœu de paix",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-48",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4655,7 +4655,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-49",
     titre: "Clarté de l'âme",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-49",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4674,7 +4674,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-50",
     titre: "L'apaisement du cœur",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-50",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4693,7 +4693,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-51",
     titre: "Promesse de sérénité",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-51",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4712,7 +4712,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-52",
     titre: "L'écrin des regrets",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-52",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4731,7 +4731,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-53",
     titre: "Vérité du cœur",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-53",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4749,7 +4749,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-54",
     titre: "Renaissance de la confiance",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-54",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4768,7 +4768,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-55",
     titre: "Un humble chemin",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-55",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4787,7 +4787,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-56",
     titre: "Harmonie et repentir",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-56",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4806,7 +4806,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-57",
     titre: "Éclat d'espoir",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-57",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4825,7 +4825,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-58",
     titre: "Refuge de pardon",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-58",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4843,7 +4843,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-59",
     titre: "La promesse du calme",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-59",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4861,7 +4861,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-60",
     titre: "L'élan de la réconciliation",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-60",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4879,7 +4879,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-61",
     titre: "Paix sur notre amour",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-61",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4897,7 +4897,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-62",
     titre: "Sur le chemin de la grâce",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-62",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4915,7 +4915,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-63",
     titre: "Douces retrouvailles",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-63",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4933,7 +4933,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-64",
     titre: "Mon serment de tendresse",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-64",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4951,7 +4951,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-65",
     titre: "Lueur de repentance",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-65",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4969,7 +4969,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-66",
     titre: "L'appel de la paix",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-66",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -4987,7 +4987,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-67",
     titre: "Sincères contritions",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-67",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5006,7 +5006,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-68",
     titre: "Vers un ciel sans nuage",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-68",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5024,7 +5024,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-69",
     titre: "Élégance du repentir",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-69",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5042,7 +5042,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-70",
     titre: "Mon humble retour",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-70",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5061,7 +5061,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-71",
     titre: "Sérénité retrouvée",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-71",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5079,7 +5079,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-72",
     titre: "L'empreinte du cœur",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-72",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5097,7 +5097,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-73",
     titre: "Promesse de douceur",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-73",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5115,7 +5115,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-74",
     titre: "Le refuge du repentir",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-74",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5133,7 +5133,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-75",
     titre: "Vers la réconciliation",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-75",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5151,7 +5151,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-76",
     titre: "Lumière dans l'ombre",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-76",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5169,7 +5169,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-77",
     titre: "Éveil du pardon",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-77",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5187,7 +5187,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-78",
     titre: "Un amour invincible",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-78",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5205,7 +5205,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-79",
     titre: "Douce clémence",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-79",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5223,7 +5223,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-80",
     titre: "Le pacte de tendresse",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-80",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5241,7 +5241,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-81",
     titre: "Regard vers l'avenir",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-81",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5259,7 +5259,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-82",
     titre: "L'écrin de mes remords",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-82",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5277,7 +5277,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-83",
     titre: "Un appel sincère",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-83",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5295,7 +5295,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-84",
     titre: "Rayon de clémence",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-84",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5313,7 +5313,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-85",
     titre: "Au nom de notre lien",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-85",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5331,7 +5331,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-86",
     titre: "Élégance et contrition",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-86",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5349,7 +5349,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-87",
     titre: "Refuge d'amour",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-87",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5367,7 +5367,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-88",
     titre: "Le souffle de la grâce",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-88",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5385,7 +5385,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-89",
     titre: "Mon humble vœu",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-89",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5403,7 +5403,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-90",
     titre: "Éternelle réconciliation",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-90",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5425,7 +5425,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-91",
     titre: "Élégance du souvenir",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-91",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5443,7 +5443,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-92",
     titre: "Source d'apaisement",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-92",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5460,7 +5460,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-93",
     titre: "L'écho de la tendresse",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-93",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5477,7 +5477,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-94",
     titre: "Horizon d'apaisement",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-94",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5494,7 +5494,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-95",
     titre: "Promesse d'un jour nouveau",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-95",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5511,7 +5511,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-96",
     titre: "Le murmure du repentir",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-96",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5528,7 +5528,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-97",
     titre: "Douce réconciliation",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-97",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5545,7 +5545,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-98",
     titre: "L'élan de la sincérité",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-98",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5562,7 +5562,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-99",
     titre: "Clarté du cœur",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-99",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5579,7 +5579,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-100",
     titre: "Sceau de l'amour",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-100",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5596,7 +5596,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-101",
     titre: "Éclat de paix",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-101",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5613,7 +5613,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-102",
     titre: "L'arbre du pardon",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-102",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5630,7 +5630,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-103",
     titre: "Reflet de contrition",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-103",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5647,7 +5647,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-104",
     titre: "Sous le signe de la grâce",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-104",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5664,7 +5664,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-105",
     titre: "L'appel de l'apaisement",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-105",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5681,7 +5681,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-106",
     titre: "Énergie de paix",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-106",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5698,7 +5698,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-107",
     titre: "Gage d'harmonie",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-107",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5715,7 +5715,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-108",
     titre: "Symphonie de regrets",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-108",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5732,7 +5732,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-109",
     titre: "Pensée repentante",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-109",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5749,7 +5749,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-110",
     titre: "Rayon de pardon",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-110",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5766,7 +5766,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-111",
     titre: "L'envol de la réconciliation",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-111",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5783,7 +5783,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-112",
     titre: "Lumière dans la brume",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-112",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5800,7 +5800,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-113",
     titre: "L'alliance apaisée",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-113",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5817,7 +5817,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-114",
     titre: "Écho de ma dévotion",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-114",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5834,7 +5834,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-115",
     titre: "Le pacte de paix",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-115",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5851,7 +5851,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-116",
     titre: "Un souffle de clémence",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-116",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5868,7 +5868,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-117",
     titre: "Au crible des sentiments",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-117",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5885,7 +5885,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-118",
     titre: "Regard vers la vérité",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-118",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5902,7 +5902,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-119",
     titre: "Sincérité du repentir",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-119",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5919,7 +5919,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-120",
     titre: "Écrin d'amour et de pardon",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-120",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5936,7 +5936,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-121",
     titre: "L'aube d'un nouvel élan",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-121",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5953,7 +5953,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-122",
     titre: "L'arche de la paix",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-122",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5970,7 +5970,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-123",
     titre: "Douce résurrection",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-123",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -5987,7 +5987,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-124",
     titre: "Un humble vœu de paix",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-124",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6004,7 +6004,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-125",
     titre: "Sérénité renouvelée",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-125",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6021,7 +6021,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-126",
     titre: "Nouveau départ",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-126",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6038,7 +6038,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-127",
     titre: "La clémence du cœur",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-127",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6055,7 +6055,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-128",
     titre: "Éclat d'amour retrouvé",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-128",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6072,7 +6072,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-129",
     titre: "Au fil du pardon",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-129",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6089,7 +6089,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-130",
     titre: "Gage de fidélité",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-130",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6106,7 +6106,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-131",
     titre: "Élégance de la promesse",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-131",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6123,7 +6123,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-132",
     titre: "Refuge de paix",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-132",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6140,7 +6140,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-133",
     titre: "Le baume des cœurs",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-133",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6157,7 +6157,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-134",
     titre: "Éveil de la bienveillance",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-134",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6174,7 +6174,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-135",
     titre: "L'étoile du repentir",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-135",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6191,7 +6191,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-136",
     titre: "Souffle de la grâce",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-136",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6208,7 +6208,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-137",
     titre: "L'empreinte du repentir",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-137",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6225,7 +6225,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-138",
     titre: "Vers l'apaisement absolu",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-138",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6242,7 +6242,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-139",
     titre: "Horizon retrouvé",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-139",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6259,7 +6259,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-140",
     titre: "Alliance des cœurs",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-140",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6276,7 +6276,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-141",
     titre: "Éphémère discorde",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-141",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6293,7 +6293,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-142",
     titre: "Chanson du pardon",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-142",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6310,7 +6310,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-143",
     titre: "Goutte de sérénité",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-143",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6327,7 +6327,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-144",
     titre: "Écrin des regrets",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-144",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6344,7 +6344,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-145",
     titre: "Lumière d'espoir",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-145",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6361,7 +6361,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-146",
     titre: "Sincère humilité",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-146",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6378,7 +6378,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-147",
     titre: "Sceau de l'apaisement",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-147",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6395,7 +6395,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-148",
     titre: "Souffle de repentance",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-148",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6412,7 +6412,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-149",
     titre: "Éveil de la clémence",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-149",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6429,7 +6429,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-150",
     titre: "Promesse éternelle",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-150",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6446,7 +6446,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-151",
     titre: "Éclat d'harmonie",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-151",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6463,7 +6463,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-152",
     titre: "L'appel du cœur",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-152",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6480,7 +6480,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-153",
     titre: "Refuge du repentir",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-153",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6497,7 +6497,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-154",
     titre: "Regard d'amour",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-154",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6514,7 +6514,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-155",
     titre: "Douce rédemption",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-155",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6531,7 +6531,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-156",
     titre: "Élégance du cœur",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-156",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6548,7 +6548,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-157",
     titre: "Rayon d'apaisement",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-157",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6565,7 +6565,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-158",
     titre: "Alliance purifiée",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-158",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6582,7 +6582,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-159",
     titre: "Mon humble retour",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-159",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6599,7 +6599,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-160",
     titre: "Éternel effacement des fautes",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-160",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6620,7 +6620,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-161",
     titre: "Douce clarté retrouvée",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-161",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6637,7 +6637,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-162",
     titre: "Écho de mes regrets",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-162",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6654,7 +6654,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-163",
     titre: "Sérénité de l'âme",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-163",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6671,7 +6671,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-164",
     titre: "Refuge de la tendresse",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-164",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6688,7 +6688,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-165",
     titre: "L'élan du repentir",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-165",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6705,7 +6705,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-166",
     titre: "Promesse d'apaisement",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-166",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6722,7 +6722,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-167",
     titre: "Un souffle de pardon",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-167",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6739,7 +6739,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-168",
     titre: "Harmonie retrouvée",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-168",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6756,7 +6756,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-169",
     titre: "Gage d'un avenir paisible",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-169",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6773,7 +6773,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-170",
     titre: "Sceau du repentir",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-170",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6790,7 +6790,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-171",
     titre: "Aurore de réconciliation",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-171",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6807,7 +6807,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-172",
     titre: "Trésor de paix",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-172",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6824,7 +6824,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-173",
     titre: "Goutte de clémence",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-173",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6841,7 +6841,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-174",
     titre: "Le chemin de l'humilité",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-174",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6858,7 +6858,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-175",
     titre: "Lueur de rédemption",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-175",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6875,7 +6875,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-176",
     titre: "Écrin d'apaisement",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-176",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6892,7 +6892,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-177",
     titre: "L'arche des sentiments",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-177",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6909,7 +6909,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-178",
     titre: "Souffle de concorde",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-178",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6926,7 +6926,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-179",
     titre: "Éclat d'amour pur",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-179",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6943,7 +6943,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-180",
     titre: "Promesse d'un renouveau",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-180",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6960,7 +6960,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-181",
     titre: "Regard vers la paix",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-181",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6977,7 +6977,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-182",
     titre: "Le vœu du cœur",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-182",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -6994,7 +6994,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-183",
     titre: "Lumière d'apaisement",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-183",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -7011,7 +7011,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-184",
     titre: "Alliance réparée",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-184",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -7028,7 +7028,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-185",
     titre: "Reflet de loyauté",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-185",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -7045,7 +7045,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-186",
     titre: "Pensée repentante",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-186",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -7062,7 +7062,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-187",
     titre: "Symphonie de réconciliation",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-187",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -7079,7 +7079,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-188",
     titre: "Horizon de paix",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-188",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -7096,7 +7096,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-189",
     titre: "Douce amende honorable",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-189",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -7113,7 +7113,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-190",
     titre: "Sceau de l'engagement",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-190",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -7130,7 +7130,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-191",
     titre: "L'élan de la sincérité",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-191",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -7147,7 +7147,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-192",
     titre: "Rayon de clémence",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-192",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -7164,7 +7164,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-193",
     titre: "Gage d'apaisement",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-193",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -7181,7 +7181,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-194",
     titre: "L'étoile du pardon",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-194",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -7198,7 +7198,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-195",
     titre: "Source de sérénité",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-195",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -7215,7 +7215,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-196",
     titre: "Harmonie d'amour",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-196",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -7232,7 +7232,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-197",
     titre: "Élégance du souvenir",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-197",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -7249,7 +7249,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-198",
     titre: "L'Alliance du cœur",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-198",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -7266,7 +7266,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-199",
     titre: "Unité retrouvée",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-199",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -7283,7 +7283,7 @@ const MES_LETTRES_PERSONNALISEES = {
     id: "pardon-200",
     titre: "Sceau final du pardon",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/votre-lien-pardon-200",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -7308,7 +7308,7 @@ const MES_LETTRES_PERSONNALISEES = {
     "id": "anniversaire-01",
     "titre": "Explosion de sentiments",
     "prix": "500 FCFA",
-    "lienChariow": "https://chariow.com/p/votre-lien-anniversaire-01",
+    "lienChariow": "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     "destinataire": "Mon Chéri / Ma Chérie",
     "expediteur": "Ton Âme Sœur",
     "lignes": [
@@ -7325,7 +7325,7 @@ const MES_LETTRES_PERSONNALISEES = {
     "id": "anniversaire-02",
     "titre": "Désir incandescent",
     "prix": "500 FCFA",
-    "lienChariow": "https://chariow.com/p/votre-lien-anniversaire-02",
+    "lienChariow": "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     "destinataire": "Mon Chéri / Ma Chérie",
     "expediteur": "Ton Âme Sœur",
     "lignes": [
@@ -7342,7 +7342,7 @@ const MES_LETTRES_PERSONNALISEES = {
     "id": "anniversaire-03",
     "titre": "Fusion des cœurs",
     "prix": "500 FCFA",
-    "lienChariow": "https://chariow.com/p/votre-lien-anniversaire-03",
+    "lienChariow": "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     "destinataire": "Mon Chéri / Ma Chérie",
     "expediteur": "Ton Âme Sœur",
     "lignes": [
@@ -7359,7 +7359,7 @@ const MES_LETTRES_PERSONNALISEES = {
     "id": "anniversaire-04",
     "titre": "Fièvre amoureuse",
     "prix": "500 FCFA",
-    "lienChariow": "https://chariow.com/p/votre-lien-anniversaire-04",
+    "lienChariow": "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     "destinataire": "Mon Chéri / Ma Chérie",
     "expediteur": "Ton Âme Sœur",
     "lignes": [
@@ -7376,7 +7376,7 @@ const MES_LETTRES_PERSONNALISEES = {
     "id": "anniversaire-05",
     "titre": "L'attraction fatale",
     "prix": "500 FCFA",
-    "lienChariow": "https://chariow.com/p/votre-lien-anniversaire-05",
+    "lienChariow": "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     "destinataire": "Mon Chéri / Ma Chérie",
     "expediteur": "Ton Âme Sœur",
     "lignes": [
@@ -7393,7 +7393,7 @@ const MES_LETTRES_PERSONNALISEES = {
     "id": "anniversaire-06",
     "titre": "Séduction éternelle",
     "prix": "500 FCFA",
-    "lienChariow": "https://chariow.com/p/votre-lien-anniversaire-06",
+    "lienChariow": "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     "destinataire": "Mon Chéri / Ma Chérie",
     "expediteur": "Ton Âme Sœur",
     "lignes": [
@@ -7410,7 +7410,7 @@ const MES_LETTRES_PERSONNALISEES = {
     "id": "anniversaire-07",
     "titre": "Tourbillon de passion",
     "prix": "500 FCFA",
-    "lienChariow": "https://chariow.com/p/votre-lien-anniversaire-07",
+    "lienChariow": "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     "destinataire": "Mon Chéri / Ma Chérie",
     "expediteur": "Ton Âme Sœur",
     "lignes": [
@@ -7427,7 +7427,7 @@ const MES_LETTRES_PERSONNALISEES = {
     "id": "anniversaire-08",
     "titre": "Extase de ton jour",
     "prix": "500 FCFA",
-    "lienChariow": "https://chariow.com/p/votre-lien-anniversaire-08",
+    "lienChariow": "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     "destinataire": "Mon Chéri / Ma Chérie",
     "expediteur": "Ton Âme Sœur",
     "lignes": [
@@ -7444,7 +7444,7 @@ const MES_LETTRES_PERSONNALISEES = {
     "id": "anniversaire-09",
     "titre": "Flamme indomptable",
     "prix": "500 FCFA",
-    "lienChariow": "https://chariow.com/p/votre-lien-anniversaire-09",
+    "lienChariow": "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     "destinataire": "Mon Chéri / Ma Chérie",
     "expediteur": "Ton Âme Sœur",
     "lignes": [
@@ -7461,7 +7461,7 @@ const MES_LETTRES_PERSONNALISEES = {
     "id": "anniversaire-10",
     "titre": "Magie de ton être",
     "prix": "500 FCFA",
-    "lienChariow": "https://chariow.com/p/votre-lien-anniversaire-10",
+    "lienChariow": "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     "destinataire": "Mon Chéri / Ma Chérie",
     "expediteur": "Ton Âme Sœur",
     "lignes": [
@@ -7478,7 +7478,7 @@ const MES_LETTRES_PERSONNALISEES = {
     "id": "anniversaire-11",
     "titre": "Vertige de l'amour",
     "prix": "500 FCFA",
-    "lienChariow": "https://chariow.com/p/votre-lien-anniversaire-11",
+    "lienChariow": "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     "destinataire": "Mon Chéri / Ma Chérie",
     "expediteur": "Ton Âme Sœur",
     "lignes": [
@@ -7495,7 +7495,7 @@ const MES_LETTRES_PERSONNALISEES = {
     "id": "anniversaire-12",
     "titre": "Océan de volupté",
     "prix": "500 FCFA",
-    "lienChariow": "https://chariow.com/p/votre-lien-anniversaire-12",
+    "lienChariow": "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     "destinataire": "Mon Chéri / Ma Chérie",
     "expediteur": "Ton Âme Sœur",
     "lignes": [
@@ -7512,7 +7512,7 @@ const MES_LETTRES_PERSONNALISEES = {
     "id": "anniversaire-13",
     "titre": "Souffle de désir",
     "prix": "500 FCFA",
-    "lienChariow": "https://chariow.com/p/votre-lien-anniversaire-13",
+    "lienChariow": "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     "destinataire": "Mon Chéri / Ma Chérie",
     "expediteur": "Ton Âme Sœur",
     "lignes": [
@@ -7529,7 +7529,7 @@ const MES_LETTRES_PERSONNALISEES = {
     "id": "anniversaire-14",
     "titre": "Célébration charnelle",
     "prix": "500 FCFA",
-    "lienChariow": "https://chariow.com/p/votre-lien-anniversaire-14",
+    "lienChariow": "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     "destinataire": "Mon Chéri / Ma Chérie",
     "expediteur": "Ton Âme Sœur",
     "lignes": [
@@ -7546,7 +7546,7 @@ const MES_LETTRES_PERSONNALISEES = {
     "id": "anniversaire-15",
     "titre": "Nuit de feu",
     "prix": "500 FCFA",
-    "lienChariow": "https://chariow.com/p/votre-lien-anniversaire-15",
+    "lienChariow": "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     "destinataire": "Mon Chéri / Ma Chérie",
     "expediteur": "Ton Âme Sœur",
     "lignes": [
@@ -7563,7 +7563,7 @@ const MES_LETTRES_PERSONNALISEES = {
     "id": "anniversaire-16",
     "titre": "L'ivresse de tes bras",
     "prix": "500 FCFA",
-    "lienChariow": "https://chariow.com/p/votre-lien-anniversaire-16",
+    "lienChariow": "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     "destinataire": "Mon Chéri / Ma Chérie",
     "expediteur": "Ton Âme Sœur",
     "lignes": [
@@ -7580,7 +7580,7 @@ const MES_LETTRES_PERSONNALISEES = {
     "id": "anniversaire-17",
     "titre": "Aura envoûtante",
     "prix": "500 FCFA",
-    "lienChariow": "https://chariow.com/p/votre-lien-anniversaire-17",
+    "lienChariow": "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     "destinataire": "Mon Chéri / Ma Chérie",
     "expediteur": "Ton Âme Sœur",
     "lignes": [
@@ -7597,7 +7597,7 @@ const MES_LETTRES_PERSONNALISEES = {
     "id": "anniversaire-18",
     "titre": "Mon étoile brûlante",
     "prix": "500 FCFA",
-    "lienChariow": "https://chariow.com/p/votre-lien-anniversaire-18",
+    "lienChariow": "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     "destinataire": "Mon Chéri / Ma Chérie",
     "expediteur": "Ton Âme Sœur",
     "lignes": [
@@ -7614,7 +7614,7 @@ const MES_LETTRES_PERSONNALISEES = {
     "id": "anniversaire-19",
     "titre": "Délicieuse tentation",
     "prix": "500 FCFA",
-    "lienChariow": "https://chariow.com/p/votre-lien-anniversaire-19",
+    "lienChariow": "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     "destinataire": "Mon Chéri / Ma Chérie",
     "expediteur": "Ton Âme Sœur",
     "lignes": [
@@ -7631,7 +7631,7 @@ const MES_LETTRES_PERSONNALISEES = {
     "id": "anniversaire-20",
     "titre": "Apothéose amoureuse",
     "prix": "500 FCFA",
-    "lienChariow": "https://chariow.com/p/votre-lien-anniversaire-20",
+    "lienChariow": "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     "destinataire": "Mon Chéri / Ma Chérie",
     "expediteur": "Ton Âme Sœur",
     "lignes": [

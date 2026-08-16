@@ -13,11 +13,11 @@ app.post('/api/creer-checkout', async (req, res) => {
 
   try {
     const response = await axios.post(`${CHARIOW_API_URL}/checkout/sessions`, {
-      amount: 500, // Prix fixé à 500 FCFA
+      amount: 600, // Prix fixé à 600 FCFA
       currency: "XOF",
       name: `Lettre d'amour : ${titre}`,
-      redirect_url: `https://votre-site.com/succes.html?letterId=${letterId}`,
-      cancel_url: "https://votre-site.com/catalogue.html",
+      redirect_url: `https://lokossoucyrille25-cloud.github.io/lettre//succes.html?letterId=${letterId}`,
+      cancel_url: "https://lokossoucyrille25-cloud.github.io/lettre//catalogue.html",
       metadata: {
         letterId: letterId // Permet de savoir quelle lettre a été achetée dans le webhook
       }
@@ -33,7 +33,7 @@ app.post('/api/creer-checkout', async (req, res) => {
 
   } catch (error) {
     console.error("Erreur lors de la création du checkout :", error);
-    res.status(500).json({ error: "Impossible de générer le paiement" });
+    res.status(600).json({ error: "Impossible de générer le paiement" });
   }
 });
 // Endpoint écouté par Chariow après un paiement réussi
