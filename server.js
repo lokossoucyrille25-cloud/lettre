@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
 
 // Clés d'API
 const CHARIOW_API_KEY = process.env.CHARIOW_API_KEY || "sk_9phghyy6_858a46d7cbc51ba7d0de8f68a781895e";
-const CHARIOW_API_URL = "prd_5ecz9fc9"; // Endpoint officiel de Chariow
+const CHARIOW_API_URL = "https://api.chariow.com"; // Endpoint officiel de Chariow
 
 // Route appelée par le frontend pour initier l'achat
 app.post('/api/creer-checkout', async (req, res) => {
@@ -25,8 +25,8 @@ app.post('/api/creer-checkout', async (req, res) => {
       amount: 600, // Prix fixé à 600 FCFA
       currency: "XOF",
       name: `Lettre d'amour : ${titre}`,
-      redirect_url: `https://lokossoucyrille25-cloud.github.io/lettre/succes.html?letterId=${letterId}`,
-      cancel_url: "https://lokossoucyrille25-cloud.github.io/lettre/catalogue.html",
+      redirect_url: `https://lettre-tau.vercel.app/lettre/succes.html?letterId=${letterId}`,
+      cancel_url: "https://lettre-tau.vercel.app/lettre/catalogue.html",
       metadata: {
         letterId: letterId
       }
@@ -41,7 +41,7 @@ app.post('/api/creer-checkout', async (req, res) => {
 
   } catch (error) {
     console.error("Erreur lors de la création du checkout :", error);
-    res.status(500).json({ error: "Impossible de générer le paiement" }); // Corrigé : 500 au lieu de 600
+    res.status(500).json({ error: "Impossible de générer le paiement" }); 
   }
 });
 
