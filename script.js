@@ -7732,7 +7732,7 @@ function chargerGrille() {
           👁️ Aperçu
         </button>
         <button onclick='acheterDirectement("${lettre.lienChariow}")' class="flex-1 py-1.5 bg-rose-600 hover:bg-rose-500 text-white text-xs font-bold rounded-lg transition-all shadow-md shadow-rose-950/40">
-          💳 Acheter
+          Acheter
         </button>
       </div>
     `;
@@ -7873,4 +7873,43 @@ function partagerSurWhatsApp() {
 // Initialisation au chargement
 document.addEventListener("DOMContentLoaded", () => {
   initialiserBaseDeDonnees();
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  const btnPayer = document.getElementById('btn-payer');
+
+  // Vérification de sécurité : on s'assure que le bouton existe sur la page actuelle
+  if (btnPayer) {
+    btnPayer.addEventListener('click', async () => {
+      
+      const letterId = "123"; // Remplacez par votre variable dynamique
+      const titre = "Lettre d'Amour";
+
+      try {
+        const response = await fetch('https://lettre-tau.vercel.app/api/creer-checkout', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            letterId: letterId,
+            titre: titre,
+            price: 600
+          })
+        });
+
+        const data = await response.json();
+
+        if (data.checkoutUrl) {
+          window.location.href = data.checkoutUrl;
+        } else {
+          alert("Erreur lors de la préparation du paiement.");
+        }
+      } catch (error) {
+        console.error("Erreur réseau :", error);
+        alert("Impossible de contacter le serveur de paiement.");
+      }
+
+    });
+  }
+
 });
