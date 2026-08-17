@@ -6,11 +6,17 @@ const cors = require('cors');
 app.use(cors());
 
 app.use(express.json());
+const path = require('path');
 
-// === 1. ROUTE RACINE (À PLACER ICI) ===
+// Autoriser Express à servir les fichiers statiques (index.html, style.css, script.js)
+app.use(express.static(path.join(__dirname)));
+
+// Remplacer l'ancienne route app.get('/') par le renvoi de index.html
 app.get('/', (req, res) => {
-  res.send('Le serveur fonctionne correctement !');
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
+
+
 
 // Clés d'API
 const CHARIOW_API_KEY = process.env.CHARIOW_API_KEY || "sk_9phghyy6_858a46d7cbc51ba7d0de8f68a781895e";
