@@ -7664,11 +7664,29 @@ function initialiserBaseDeDonnees() {
 function afficherPage(page) {
   const pAccueil = document.getElementById("page-accueil");
   const pCatalogue = document.getElementById("page-catalogue");
+  
 
   if (page === "accueil") {
     pAccueil.classList.remove("hidden");
     pCatalogue.classList.add("hidden");
   } else {
+    pAccueil.classList.add("hidden");
+    pCatalogue.classList.remove("hidden");
+    renderOnglets();
+    chargerGrille();
+  }
+}
+
+function afficherPage(page) {
+  const pAccueil = document.getElementById("page-accueil");
+  const pCatalogue = document.getElementById("page-catalogue");
+
+  if (!pAccueil || !pCatalogue) return;
+
+  if (page === "accueil") {
+    pAccueil.classList.remove("hidden");
+    pCatalogue.classList.add("hidden");
+  } else if (page === "catalogue") {
     pAccueil.classList.add("hidden");
     pCatalogue.classList.remove("hidden");
     renderOnglets();
