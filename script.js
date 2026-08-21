@@ -24,25 +24,39 @@ let categorieActive = "amour";
 let lettreActive = null;
 let estDebloque = false;
 
-// Historique des achats stocké en local
-const lettresAchetees = JSON.parse(localStorage.getItem('lettres_debloquees') || '[]');
+// --- GESTION DU STOCKAGE LOCAL (FONCTIONS ROBUSTES) ---
 
-// Initialisation des données
+// Vérifie si une lettre est débloquée (en convertissant tout en texte pour éviter les erreurs 1 vs "1")
+function estLettreAchetee(id) {
+  if (!id) return false;
+  const liste = JSON.parse(localStorage.getItem('lettres_debloquees') || '[]');
+  return liste.some(item => String(item) === String(id));
+}
+
+// Ajoute une lettre à la liste des achats
+function ajouterLettreAchetee(id) {
+  if (!id) return;
+  let liste = JSON.parse(localStorage.getItem('lettres_debloquees') || '[]');
+  if (!liste.some(item => String(item) === String(id))) {
+    liste.push(String(id));
+    localStorage.setItem('lettres_debloquees', JSON.stringify(liste));
+  }
+}
+
+// --- INITIALISATION ---
+
 function initialiserBaseDeDonnees() {
   CATEGORIES.forEach(cat => {
     databaseGlobal[cat.id] = MES_LETTRES_PERSONNALISEES[cat.id] || [];
   });
 }
 
-/**
- * Recherche une lettre par son ID dans toutes les catégories
- */
 function trouverLettreParId(id) {
   if (!id) return null;
   for (const catKey in databaseGlobal) {
     const trouvee = databaseGlobal[catKey].find(l => String(l.id) === String(id));
     if (trouvee) {
-      categorieActive = catKey; // Bascule automatique sur la catégorie correspondante
+      categorieActive = catKey;
       return trouvee;
     }
   }
@@ -50,35 +64,45 @@ function trouverLettreParId(id) {
 }
 
 /**
- * Détection et déblocage automatique si le client revient de la page Chariow
+ * Détection et déblocage automatique au retour de Chariow
  */
 function verifierRetourPaiement() {
   const urlParams = new URLSearchParams(window.location.search);
-  const letterId = urlParams.get('letterId');
+  
+  // 1. Récupère l'ID soit depuis l'URL, soit depuis la sauvegarde temporaire avant paiement
+  const letterIdFromUrl = urlParams.get('letterId');
+  const pendingLetterId = localStorage.getItem('pending_letter_id');
+  const isSuccesUrl = urlParams.get('succes') === 'true' || urlParams.has('letterId');
 
-  if (letterId) {
-    // 1. Enregistrer la lettre comme achevée dans localStorage
-    if (!lettresAchetees.includes(letterId)) {
-      lettresAchetees.push(letterId);
-      localStorage.setItem('lettres_debloquees', JSON.stringify(lettresAchetees));
-    }
+  const targetLetterId = letterIdFromUrl || pendingLetterId;
 
-    // 2. Trouver la lettre
-    const lettre = trouverLettreParId(letterId);
+  // Si on détecte un retour de paiement ou qu'une lettre était en attente
+  if ((isSuccesUrl || pendingLetterId) && targetLetterId) {
+    
+    // 2. Débloquer définitivement la lettre
+    ajouterLettreAchetee(targetLetterId);
+    
+    // Nettoyer la mémoire temporaire
+    localStorage.removeItem('pending_letter_id');
+
+    // 3. Trouver la lettre et forcer l'affichage du catalogue + modale
+    const lettre = trouverLettreParId(targetLetterId);
 
     if (lettre) {
-      // 3. Ouvrir le catalogue et afficher directement la modale de la lettre débloquée
-      afficherPage('catalogue');
-      ouvrirModaleAvecLettre(letterId);
+      setTimeout(() => {
+        afficherPage('catalogue');
+        ouvrirModaleAvecLettre(targetLetterId);
 
-      // 4. Nettoyer l'URL pour éviter de réexécuter au rechargement de page (F5)
-      const cleanUrl = window.location.origin + window.location.pathname;
-      window.history.replaceState({}, document.title, cleanUrl);
+        // Nettoyer l'URL proprement
+        const cleanUrl = window.location.origin + window.location.pathname;
+        window.history.replaceState({}, document.title, cleanUrl);
+      }, 200);
     }
   }
 }
 
-// Navigation entre les pages
+// --- NAVIGATION ---
+
 function afficherPage(page) {
   const pAccueil = document.getElementById("page-accueil");
   const pCatalogue = document.getElementById("page-catalogue");
@@ -101,7 +125,8 @@ function filtrerEtOuvrirCatalogue(catId) {
   afficherPage('catalogue');
 }
 
-// Rendu Interface Utilisateur
+// --- RENDU UI ---
+
 function renderOnglets() {
   const container = document.getElementById("categories-tabs");
   if (!container) return;
@@ -139,7 +164,8 @@ function chargerGrille() {
 
   liste.forEach(lettre => {
     const apercuTexte = lettre.lignes[1]?.text || lettre.lignes[0]?.text || "";
-    const dejaPossede = lettresAchetees.includes(lettre.id);
+    const dejaPossede = estLettreAchetee(lettre.id);
+
     const card = document.createElement("div");
     card.className = "bg-slate-900 border border-slate-800 rounded-xl p-4 flex flex-col justify-between hover:border-rose-500/50 transition-all space-y-3 group shadow-lg";
 
@@ -157,7 +183,10 @@ function chargerGrille() {
 
       <div class="flex gap-2 pt-2">
         <button onclick='ouvrirModaleAvecLettre("${lettre.id}")' class="w-full py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold rounded-lg transition-colors">
-          👁️ ${dejaPossede ? 'Lire la lettre' : 'Aperçu & Déblocage'}
+          👁️ ${dejaPossede ? 'Lire la lettre' : 'Aperçu'}
+        </button>
+        <button onclick='ouvrirModaleAvecLettre("${lettre.id}")' class="w-full py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold rounded-lg transition-colors">
+           ${dejaPossede ? 'Lire la lettre' : ' Débloquer'}
         </button>
       </div>
     `;
@@ -169,13 +198,14 @@ function filtrerLettres() {
   chargerGrille();
 }
 
-// Modale & Enveloppe
+// --- MODALE ET ENVELOPPE ---
+
 function ouvrirModaleAvecLettre(id) {
   lettreActive = trouverLettreParId(id);
   if (!lettreActive) return;
 
-  // Vérification de l'état de déblocage
-  estDebloque = lettresAchetees.includes(lettreActive.id);
+  // Vérification si la lettre est débloquée
+  estDebloque = estLettreAchetee(lettreActive.id);
   fermerEnveloppe();
 
   document.getElementById("modal-title").innerText = lettreActive.titre;
@@ -192,6 +222,11 @@ function ouvrirModaleAvecLettre(id) {
 
   mettreAJourUIModale();
   document.getElementById("letter-modal").classList.remove("hidden");
+  
+  // Si déjà débloquée, ouvrir l'enveloppe automatiquement après un léger délai
+  if (estDebloque) {
+    setTimeout(ouvrirEnveloppe, 300);
+  }
 }
 
 function fermerModale() {
@@ -206,22 +241,9 @@ function fermerEnveloppe() {
   document.getElementById("envelope").classList.remove("open");
 }
 
-function acheterDirectement(url) {
-  if (url) window.open(url, "_blank");
-}
-
-function payerAvecChariow() {
-  if (lettreActive && lettreActive.lienChariow) {
-    window.open(lettreActive.lienChariow, "_blank");
-  } else {
-    simulerDeblocage();
-  }
-}
-
 function simulerDeblocage() {
-  if (lettreActive && !lettresAchetees.includes(lettreActive.id)) {
-    lettresAchetees.push(lettreActive.id);
-    localStorage.setItem('lettres_debloquees', JSON.stringify(lettresAchetees));
+  if (lettreActive) {
+    ajouterLettreAchetee(lettreActive.id);
   }
   estDebloque = true;
   mettreAJourUIModale();
@@ -242,7 +264,8 @@ function mettreAJourUIModale() {
   }
 }
 
-// Export HTML autonome
+// --- EXPORT HTML & PARTAGE ---
+
 function telechargerLettre() {
   if (!estDebloque || !lettreActive) return;
 
@@ -250,7 +273,6 @@ function telechargerLettre() {
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${lettreActive.titre}</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
@@ -306,7 +328,7 @@ function partagerSurWhatsApp() {
   window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(msg)}`, "_blank");
 }
 
-// Exposer les fonctions globales au window
+// Exportation globale pour HTML
 window.afficherPage = afficherPage;
 window.filtrerEtOuvrirCatalogue = filtrerEtOuvrirCatalogue;
 window.renderOnglets = renderOnglets;
@@ -316,25 +338,28 @@ window.ouvrirModaleAvecLettre = ouvrirModaleAvecLettre;
 window.fermerModale = fermerModale;
 window.ouvrirEnveloppe = ouvrirEnveloppe;
 window.fermerEnveloppe = fermerEnveloppe;
-window.acheterDirectement = acheterDirectement;
-window.payerAvecChariow = payerAvecChariow;
 window.simulerDeblocage = simulerDeblocage;
 window.telechargerLettre = telechargerLettre;
 window.partagerSurWhatsApp = partagerSurWhatsApp;
 
-// Initialisation au chargement du DOM
+// --- INITIALISATION AU CHARGEMENT ---
+
 document.addEventListener("DOMContentLoaded", () => {
   initialiserBaseDeDonnees();
-  verifierRetourPaiement(); // <-- Analyse automatique de l'URL au retour du paiement
+  verifierRetourPaiement();
 
+  // Écouteur sur le bouton de paiement
   const btnPayer = document.getElementById('btn-payer');
   if (btnPayer) {
     btnPayer.addEventListener('click', async () => {
-      const letterId = lettreActive ? lettreActive.id : "123";
+      const letterId = lettreActive ? String(lettreActive.id) : "1";
       const titre = lettreActive ? lettreActive.titre : "Lettre d'Amour";
 
+      // 🔴 ÉTAPE CLÉ : On sauvegarde l'ID avant de quitter la page
+      localStorage.setItem('pending_letter_id', letterId);
+
       try {
-        const response = await fetch('https://lettre-tau.vercel.app/api/creer-checkout', {
+        const response = await fetch('/api/creer-checkout', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
@@ -347,6 +372,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const data = await response.json();
 
         if (data.checkoutUrl) {
+          // Redirection vers Chariow
           window.location.href = data.checkoutUrl;
         } else {
           alert("Erreur lors de la préparation du paiement.");
