@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guide Client & FAQ - Vos Lettres Personnalisées</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #0f172a;
+      color: #f8fafc;
+    }
+    .font-cursive {
+      font-family: 'Caveat', cursive;
+    }
+    /* Optimization pour l'impression en PDF */
+    @media print {
+      body {
+        background-color: #ffffff !important;
+        color: #0f172a !important;
+      }
+      .no-print {
+        display: none !important;
+      }
+      .pdf-box {
+        border: 1px solid #cbd5e1 !important;
+        background-color: #f8fafc !important;
+        color: #0f172a !important;
+        box-shadow: none !important;
+      }
+      .pdf-card {
+        border: 1px solid #e2e8f0 !important;
+        background-color: #ffffff !important;
+        color: #0f172a !important;
+      }
+      .text-rose-400, .text-rose-300 {
+        color: #e11d48 !important;
+      }
+      .text-slate-400, .text-slate-300 {
+        color: #475569 !important;
+      }
+      .bg-rose-600 {
+        background-color: #e11d48 !important;
+      }
+    }
+  </style>
+</head>
+<body class="min-h-screen p-6 md:p-12 flex flex-col items-center justify-center">
+
+  <!-- Bouton d'impression rapide (masqué sur le PDF) -->
+  <div class="no-print mb-6 text-center">
+    <button onclick="window.print()" class="px-6 py-3 bg-rose-600 hover:bg-rose-500 text-white font-bold rounded-xl shadow-lg transition-all flex items-center gap-2 mx-auto cursor-pointer">
+      📄 Télécharger / Imprimer en PDF
+    </button>
+    <p class="text-xs text-slate-400 mt-2">Cliquez puis sélectionnez <b>"Enregistrer au format PDF"</b></p>
+  </div>
+
+  <!-- Document PDF -->
+  <div class="pdf-box max-w-2xl w-full bg-slate-900 border border-slate-800 rounded-2xl p-8 shadow-2xl space-y-6">
+    
+    <!-- En-tête -->
+    <div class="border-b border-slate-800 pb-6 text-center space-y-2">
+      <h1 class="font-cursive text-4xl text-rose-400">Lettres d'Amour & Intentions</h1>
+      <h2 class="text-xl font-bold uppercase tracking-wider text-slate-200">Guide Utilisateur & FAQ</h2>
+      <p class="text-xs text-slate-400">Merci pour votre confiance. Voici toutes les informations pour profiter de votre achat.</p>
+    </div>
+
+    <!-- Questions / Réponses -->
+    <div class="space-y-4">
+
+      <!-- Q1 -->
+      <div class="pdf-card bg-slate-950/60 border border-slate-800 rounded-xl p-4 space-y-1">
+        <h3 class="text-sm font-bold text-rose-300 flex items-center gap-2">
+          <span>1.</span> Comment accéder à ma lettre après l'achat ?
+        </h3>
+        <p class="text-xs text-slate-300 leading-relaxed pl-5">
+          Après la validation du paiement sur Chariow, vous êtes automatiquement redirigé vers votre page de succès contenant votre lettre débloquée. Si la page s'est fermée, utilisez le lien reçu dans votre reçu de paiement.
+        </p>
+      </div>
+
+      <!-- Q2 -->
+      <div class="pdf-card bg-slate-950/60 border border-slate-800 rounded-xl p-4 space-y-1">
+        <h3 class="text-sm font-bold text-rose-300 flex items-center gap-2">
+          <span>2.</span> Comment récupérer ou envoyer le texte de la lettre ?
+        </h3>
+        <p class="text-xs text-slate-300 leading-relaxed pl-5">
+          Sur la page de déblocage, 3 options simples s'offrent à vous :
+          <br>• <b>Copier le texte :</b> Pour le coller dans vos SMS, Notes ou e-mails.
+          <br>• <b>Partager sur WhatsApp :</b> Envoi direct et instantané à votre destinataire.
+          <br>• <b>Télécharger (HTML) :</b> Pour enregistrer un fichier interactif réutilisable hors-ligne.
+        </p>
+      </div>
+
+      <!-- Q3 -->
+      <div class="pdf-card bg-slate-950/60 border border-slate-800 rounded-xl p-4 space-y-1">
+        <h3 class="text-sm font-bold text-rose-300 flex items-center gap-2">
+          <span>3.</span> Puis-je modifier ou personnaliser le texte ?
+        </h3>
+        <p class="text-xs text-slate-300 leading-relaxed pl-5">
+          Absolument ! Une fois le texte copié ou ouvert, vous pouvez ajuster les prénoms, ajouter des souvenirs personnels ou modifier les phrases pour adapter parfaitement le message à votre histoire.
+        </p>
+      </div>
+
+      <!-- Q4 -->
+      <div class="pdf-card bg-slate-950/60 border border-slate-800 rounded-xl p-4 space-y-1">
+        <h3 class="text-sm font-bold text-rose-300 flex items-center gap-2">
+          <span>4.</span> Que faire si j'ai un problème d'accès ou de paiement ?
+        </h3>
+        <p class="text-xs text-slate-300 leading-relaxed pl-5">
+          Pas d'inquiétude, votre transaction est sécurisée et enregistrée. En cas de souci, gardez votre numéro de transaction Chariow et contactez notre assistance dédiée.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Pied de page & Support -->
+    <div class="border-t border-slate-800 pt-4 text-center space-y-1">
+      <p class="text-xs font-semibold text-slate-300">Plateforme officielle : <span class="text-rose-400">lettre-tau.vercel.app</span></p>
+      <p class="text-[10px] text-slate-500">Document joint pour tout achat effectué via la boutique officielle Chariow.</p>
+    </div>
+
+  </div>
+
+</body>
+</html>

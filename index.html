@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lettres d'Amour 💖 </title>
+  <title>Lettres d'Amour 💖</title>
+  
   <!-- LOGO APP & FAVICON -->
-    <link rel="icon" type="image/svg+xml" href="logo.svg" />
-    <link rel="apple-touch-icon" href="logo.svg" />
-    <link rel="apple-touch-icon" href="logo-180.png"/>
-    <meta name="theme-color" content="#0f172a" />
+  <link rel="icon" type="image/svg+xml" href="logo.svg" />
+  <link rel="apple-touch-icon" href="logo.svg" />
+  <link rel="apple-touch-icon" href="logo-180.png"/>
+  <meta name="theme-color" content="#0f172a" />
   
   <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -38,6 +39,21 @@
         }
       }
     }
+  </script>
+
+  <!-- Chargement Asynchrone du Widget Chariow -->
+  <script>
+    (function() {
+      var script = document.createElement('script');
+      script.src = 'https://js.chariowcdn.com/v1/widget.min.js';
+      script.async = true;
+      document.head.appendChild(script);
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = 'https://js.chariowcdn.com/v1/widget.min.css';
+      document.head.appendChild(link);
+    })();
   </script>
 </head>
 <body class="bg-slate-950 text-slate-100 font-sans min-h-screen flex flex-col justify-between relative overflow-x-hidden">
@@ -78,7 +94,7 @@
     </h1>
     
     <p class="text-slate-400 text-sm md:text-base max-w-2xl leading-relaxed">
-      Choisissez parmi une vaste collection de déclarations poétiques, débloquez votre modèle préféré via Mobile Money pour seulement <strong class="text-rose-400">500 FCFA</strong> et partagez-le instantanément.
+      Choisissez parmi une vaste collection de déclarations poétiques, débloquez votre modèle préféré via Mobile Money pour seulement <strong class="text-rose-400">600 FCFA</strong> et partagez-le instantanément.
     </p>
 
     <div class="flex flex-col sm:flex-row gap-4 w-full justify-center max-w-sm">
@@ -137,7 +153,7 @@
 
     <!-- Grille des cases (Cards) -->
     <div id="letters-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-      <!-- 100+ cases injectées par JS -->
+      <!-- Injectées par JS -->
     </div>
   </section>
 
@@ -170,38 +186,72 @@
 
       <!-- Contrôles et Paiement -->
       <div class="space-y-3 text-center">
-        <div id="block-locked" class="space-y-2">
+        
+        <!-- BLOC PAIEMENT (VERROUILLÉ) -->
+        <div id="block-locked" class="space-y-3">
           <p class="text-xs text-slate-400">Tarif unique : <strong class="text-rose-400">600 FCFA</strong></p>
-          <button onclick="payerAvecChariow()" class="w-full py-2.5 bg-gradient-to-r from-rose-600 to-love-600 text-white font-bold rounded-xl shadow-lg text-xs">
-              Payer 600 FCFA 
-          </button>
           
+          <!-- Widget Chariow Intégré & Stylisé aux Couleurs du Site -->
+          <div class="overflow-hidden rounded-xl bg-slate-950 p-2 border border-slate-800 flex justify-center">
+            <div id="chariow-widget" 
+                 data-product-id="prd_zjdp8n4p"
+                 data-store-domain="mkiewzpt.mychariow.market"
+                 data-style="frame"
+                 data-border-style="rounded"
+                 data-cta-width="full"
+                 data-cta-animation="shine"
+                 data-locale="fr"
+                 data-primary-color="#f43f5e"
+                 data-background-color="#0f172a">
+            </div>
+          </div>
+
+          <!-- Bouton de secours / Déclencheur manuel Chariow -->
+          <button onclick="payerAvecChariow()" class="w-full py-2 bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold rounded-xl text-xs transition-all border border-slate-700">
+            Payer ou Valider la transaction
+          </button>
         </div>
 
+        <!-- BLOC ACTIONS (DÉBLOQUÉ) -->
         <div id="block-unlocked" class="hidden space-y-2">
           <p class="text-xs text-emerald-400 font-medium">✨ Lettre débloquée !</p>
           <div class="flex gap-2">
-            <button onclick="ouvrirEnveloppe()" class="flex-1 py-2 bg-rose-600 text-white font-semibold rounded-lg text-xs">💌 Ouvrir</button>
-            <button onclick="fermerEnveloppe()" class="flex-1 py-2 bg-slate-800 text-slate-300 font-semibold rounded-lg text-xs">🔒 Fermer</button>
+            <button onclick="ouvrirEnveloppe()" class="flex-1 py-2 bg-rose-600 hover:bg-rose-500 text-white font-semibold rounded-lg text-xs transition-all">💌 Ouvrir</button>
+            <button onclick="fermerEnveloppe()" class="flex-1 py-2 bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold rounded-lg text-xs transition-all">🔒 Fermer</button>
           </div>
           
-          <button onclick="telechargerLettre()" class="w-full py-2 bg-rose-950/60 text-rose-200 border border-rose-800/40 font-medium rounded-lg text-xs flex items-center justify-center gap-1.5">
+          <button onclick="telechargerLettre()" class="w-full py-2 bg-rose-950/60 hover:bg-rose-900/60 text-rose-200 border border-rose-800/40 font-medium rounded-lg text-xs flex items-center justify-center gap-1.5 transition-all">
             📥 Télécharger la lettre 
           </button>
 
-          <button onclick="partagerSurWhatsApp()" class="w-full py-2 bg-emerald-700/30 text-emerald-300 border border-emerald-600/30 font-medium rounded-lg text-xs">
+          <button onclick="partagerSurWhatsApp()" class="w-full py-2 bg-emerald-700/30 hover:bg-emerald-700/50 text-emerald-300 border border-emerald-600/30 font-medium rounded-lg text-xs transition-all">
             📲 Partager sur WhatsApp
           </button>
         </div>
+
       </div>
 
     </div>
   </div>
 
   <footer class="text-center text-slate-600 text-xs py-4 border-t border-slate-900 mt-8 z-10">
-    &copy;        Lettres d'Amour
+    &copy; Lettres d'Amour
   </footer>
 
-  <script src="script.js"></script>
+  <!-- Listener d'événement de paiement automatique Chariow -->
+  <script>
+    window.addEventListener('message', function(event) {
+      if (event.data && (event.data.type === 'chariow_success' || event.data.status === 'success' || event.data === 'payment_success')) {
+        if (typeof window.payerAvecChariow === 'function') {
+          window.payerAvecChariow();
+        } else {
+          document.getElementById('block-locked')?.classList.add('hidden');
+          document.getElementById('block-unlocked')?.classList.remove('hidden');
+        }
+      }
+    });
+  </script>
+
+  <script type="module" src="script.js"></script>
 </body>
 </html>
