@@ -34,6 +34,50 @@ function initialiserBaseDeDonnees() {
   });
 }
 
+/**
+ * Recherche une lettre par son ID dans toutes les catégories
+ */
+function trouverLettreParId(id) {
+  if (!id) return null;
+  for (const catKey in databaseGlobal) {
+    const trouvee = databaseGlobal[catKey].find(l => String(l.id) === String(id));
+    if (trouvee) {
+      categorieActive = catKey; // Bascule automatique sur la catégorie correspondante
+      return trouvee;
+    }
+  }
+  return null;
+}
+
+/**
+ * Détection et déblocage automatique si le client revient de la page Chariow
+ */
+function verifierRetourPaiement() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const letterId = urlParams.get('letterId');
+
+  if (letterId) {
+    // 1. Enregistrer la lettre comme achevée dans localStorage
+    if (!lettresAchetees.includes(letterId)) {
+      lettresAchetees.push(letterId);
+      localStorage.setItem('lettres_debloquees', JSON.stringify(lettresAchetees));
+    }
+
+    // 2. Trouver la lettre
+    const lettre = trouverLettreParId(letterId);
+
+    if (lettre) {
+      // 3. Ouvrir le catalogue et afficher directement la modale de la lettre débloquée
+      afficherPage('catalogue');
+      ouvrirModaleAvecLettre(letterId);
+
+      // 4. Nettoyer l'URL pour éviter de réexécuter au rechargement de page (F5)
+      const cleanUrl = window.location.origin + window.location.pathname;
+      window.history.replaceState({}, document.title, cleanUrl);
+    }
+  }
+}
+
 // Navigation entre les pages
 function afficherPage(page) {
   const pAccueil = document.getElementById("page-accueil");
@@ -104,7 +148,7 @@ function chargerGrille() {
         <div class="flex items-center justify-between">
           <span class="text-[10px] font-bold text-rose-400 uppercase tracking-wider">Modèle #${lettre.id}</span>
           <span class="text-xs font-bold ${dejaPossede ? 'text-emerald-400 bg-emerald-950/50 border border-emerald-800' : 'text-slate-300 bg-slate-800'} px-2 py-0.5 rounded">
-            ${dejaPossede ? 'Débloqué' : '600 FCFA'}
+            ${dejaPossede ? '🔓 Débloqué' : '600 FCFA'}
           </span>
         </div>
         <h3 class="font-cursive text-2xl text-slate-100 group-hover:text-rose-300 transition-colors">${lettre.titre}</h3>
@@ -113,7 +157,7 @@ function chargerGrille() {
 
       <div class="flex gap-2 pt-2">
         <button onclick='ouvrirModaleAvecLettre("${lettre.id}")' class="w-full py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold rounded-lg transition-colors">
-          👁️ ${dejaPossede ? 'Voir la lettre' : 'Aperçu & Déblocage'}
+          👁️ ${dejaPossede ? 'Lire la lettre' : 'Aperçu & Déblocage'}
         </button>
       </div>
     `;
@@ -127,7 +171,7 @@ function filtrerLettres() {
 
 // Modale & Enveloppe
 function ouvrirModaleAvecLettre(id) {
-  lettreActive = (databaseGlobal[categorieActive] || []).find(l => l.id === id);
+  lettreActive = trouverLettreParId(id);
   if (!lettreActive) return;
 
   // Vérification de l'état de déblocage
@@ -188,6 +232,7 @@ function simulerDeblocage() {
 function mettreAJourUIModale() {
   const locked = document.getElementById("block-locked");
   const unlocked = document.getElementById("block-unlocked");
+
   if (estDebloque) {
     locked?.classList.add("hidden");
     unlocked?.classList.remove("hidden");
@@ -280,6 +325,7 @@ window.partagerSurWhatsApp = partagerSurWhatsApp;
 // Initialisation au chargement du DOM
 document.addEventListener("DOMContentLoaded", () => {
   initialiserBaseDeDonnees();
+  verifierRetourPaiement(); // <-- Analyse automatique de l'URL au retour du paiement
 
   const btnPayer = document.getElementById('btn-payer');
   if (btnPayer) {
