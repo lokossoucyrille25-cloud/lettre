@@ -2,14 +2,13 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Redirection...</title>
+  <title>Paiement Réussi</title>
   <script>
-    // Récupère les paramètres de l'URL (?letterId=...) et redirige vers la page d'accueil
-    const searchParams = window.location.search;
-    window.location.href = "./" + searchParams;
+    // Redirige vers la racine GitHub Pages avec le paramètre de paiement
+    window.location.href = "./?paye=true";
   </script>
 </head>
 <body style="background-color: #020617; color: white; font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh;">
-  <p>Redirection vers votre lettre débloquée en cours...</p>
+  <p>Paiement validé ! Redirection vers votre lettre...</p>
 </body>
 </html>
