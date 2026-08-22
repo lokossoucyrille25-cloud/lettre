@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="fr" class="dark scroll-smooth">
+<html lang="fr" class="dark scroll-smooth h-full">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <title>Lettres d'Amour 💖</title>
   
   <!-- LOGO APP & FAVICON -->
@@ -10,6 +10,8 @@
   <link rel="apple-touch-icon" href="logo.svg" />
   <link rel="apple-touch-icon" href="logo-180.png"/>
   <meta name="theme-color" content="#0f172a" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   
   <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -41,6 +43,29 @@
     }
   </script>
 
+  <!-- CSS de correctifs universels Mobile & Web -->
+  <style>
+    /* Safe Areas iOS (Notch & Home Indicator) */
+    .pt-safe { padding-top: env(safe-area-inset-top, 0px); }
+    .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); }
+    
+    /* Hauteur dynamique d'écran */
+    .min-h-screen-dvh { min-height: 100dvh; }
+    .max-h-modal { max-height: calc(100dvh - 2rem - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px)); }
+
+    /* Touch & Scroll Mobile */
+    .touch-manipulation { touch-action: manipulation; }
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+    /* Ajustement responsive du Widget Chariow sur grands écrans et mobiles */
+    #chariow-widget, #chariow-widget iframe {
+      width: 100% !important;
+      max-width: 100% !important;
+      box-sizing: border-box !important;
+    }
+  </style>
+
   <!-- Chargement Asynchrone du Widget Chariow -->
   <script>
     (function() {
@@ -56,7 +81,7 @@
     })();
   </script>
 </head>
-<body class="bg-slate-950 text-slate-100 font-sans min-h-screen flex flex-col justify-between relative overflow-x-hidden">
+<body class="bg-slate-950 text-slate-100 font-sans min-h-screen-dvh flex flex-col justify-between relative overflow-x-hidden pt-safe pb-safe selection:bg-rose-500 selection:text-white">
 
   <!-- Arrière-plan animé de cœurs -->
   <div class="hearts-bg fixed inset-0 pointer-events-none opacity-20 z-0">
@@ -67,16 +92,16 @@
   </div>
 
   <!-- Barre de Navigation -->
-  <nav class="sticky top-0 z-40 bg-slate-950/80 backdrop-blur-md border-b border-slate-800 px-4 py-3">
+  <nav class="sticky top-0 z-40 bg-slate-950/80 backdrop-blur-md border-b border-slate-800/80 px-4 py-3 pt-safe">
     <div class="max-w-6xl mx-auto flex items-center justify-between">
-      <div class="flex items-center gap-2 cursor-pointer" onclick="afficherPage('accueil')">
+      <div class="flex items-center gap-2 cursor-pointer touch-manipulation select-none" onclick="afficherPage('accueil')">
         <span class="text-2xl">💌</span>
         <span class="font-cursive text-2xl font-bold text-rose-400">Lettres d'Amour</span>
       </div>
       
-      <div class="flex items-center gap-4 text-xs font-semibold">
-        <button onclick="afficherPage('accueil')" class="hover:text-rose-400 transition-colors">Accueil</button>
-        <button onclick="afficherPage('catalogue')" class="px-3 py-1.5 bg-rose-600 hover:bg-rose-500 text-white rounded-lg transition-all shadow-md shadow-rose-950/50">
+      <div class="flex items-center gap-3 sm:gap-4 text-xs font-semibold">
+        <button onclick="afficherPage('accueil')" class="hover:text-rose-400 transition-colors p-2 min-h-[44px] flex items-center touch-manipulation">Accueil</button>
+        <button onclick="afficherPage('catalogue')" class="px-3.5 py-2 min-h-[44px] bg-rose-600 hover:bg-rose-500 active:bg-rose-700 text-white rounded-xl transition-all shadow-md shadow-rose-950/50 touch-manipulation flex items-center justify-center">
           Catalogue
         </button>
       </div>
@@ -84,43 +109,43 @@
   </nav>
 
   <!-- ================= SECTION 1 : PAGE D'ACCUEIL ================= -->
-  <section id="page-accueil" class="z-10 flex-1 flex flex-col items-center justify-center text-center px-4 py-12 max-w-4xl mx-auto space-y-8">
-    <span class="inline-block px-4 py-1.5 rounded-full bg-rose-950/80 border border-rose-800/50 text-rose-300 text-xs font-semibold tracking-wider uppercase shadow-lg">
+  <section id="page-accueil" class="z-10 flex-1 flex flex-col items-center justify-center text-center px-4 py-8 sm:py-12 max-w-4xl mx-auto space-y-6 sm:space-y-8 w-full">
+    <span class="inline-block px-4 py-1.5 rounded-full bg-rose-950/80 border border-rose-800/50 text-rose-300 text-[11px] sm:text-xs font-semibold tracking-wider uppercase shadow-lg">
       ✨ Des modèles uniques de lettre
     </span>
     
-    <h1 class="font-cursive text-6xl md:text-7xl text-rose-400 leading-tight drop-shadow-[0_0_20px_rgba(244,63,94,0.3)]">
+    <h1 class="font-cursive text-4xl sm:text-6xl md:text-7xl text-rose-400 leading-tight drop-shadow-[0_0_20px_rgba(244,63,94,0.3)] px-2">
       Offrez une émotion inoubliable sous forme de lettre animée.
     </h1>
     
-    <p class="text-slate-400 text-sm md:text-base max-w-2xl leading-relaxed">
+    <p class="text-slate-400 text-xs sm:text-sm md:text-base max-w-2xl leading-relaxed px-2">
       Choisissez parmi une vaste collection de déclarations poétiques, débloquez votre modèle préféré via Mobile Money pour seulement <strong class="text-rose-400">600 FCFA</strong> et partagez-le instantanément.
     </p>
 
-    <div class="flex flex-col sm:flex-row gap-4 w-full justify-center max-w-sm">
-      <button onclick="afficherPage('catalogue')" class="py-3 px-8 bg-gradient-to-r from-rose-600 to-love-600 hover:from-rose-500 hover:to-love-500 text-white font-bold rounded-xl shadow-xl shadow-rose-950/60 transition-all transform hover:scale-105">
+    <div class="flex flex-col sm:flex-row gap-4 w-full justify-center max-w-sm px-4">
+      <button onclick="afficherPage('catalogue')" class="w-full py-3.5 px-8 bg-gradient-to-r from-rose-600 to-love-600 hover:from-rose-500 hover:to-love-500 active:scale-95 text-white font-bold rounded-xl shadow-xl shadow-rose-950/60 transition-all touch-manipulation text-sm sm:text-base">
         Explorer le Catalogue
       </button>
     </div>
 
     <!-- Aperçu des catégories -->
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 w-full pt-8 text-left">
-      <div onclick="filtrerEtOuvrirCatalogue('amour')" class="p-4 bg-slate-900/60 border border-slate-800 rounded-xl hover:border-rose-500/50 cursor-pointer transition-all">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 w-full pt-4 sm:pt-8 text-left">
+      <div onclick="filtrerEtOuvrirCatalogue('amour')" class="p-3.5 sm:p-4 bg-slate-900/60 border border-slate-800 rounded-xl hover:border-rose-500/50 active:bg-slate-800/80 cursor-pointer transition-all touch-manipulation">
         <div class="text-2xl mb-1">❤️</div>
         <div class="text-xs font-bold text-slate-200">Déclarations</div>
         <div class="text-[10px] text-slate-400">voir les modèles</div>
       </div>
-      <div onclick="filtrerEtOuvrirCatalogue('pardon')" class="p-4 bg-slate-900/60 border border-slate-800 rounded-xl hover:border-rose-500/50 cursor-pointer transition-all">
+      <div onclick="filtrerEtOuvrirCatalogue('pardon')" class="p-3.5 sm:p-4 bg-slate-900/60 border border-slate-800 rounded-xl hover:border-rose-500/50 active:bg-slate-800/80 cursor-pointer transition-all touch-manipulation">
         <div class="text-2xl mb-1">🕊️</div>
         <div class="text-xs font-bold text-slate-200">Pardons</div>
         <div class="text-[10px] text-slate-400">voir les modèles</div>
       </div>
-      <div onclick="filtrerEtOuvrirCatalogue('anniversaire')" class="p-4 bg-slate-900/60 border border-slate-800 rounded-xl hover:border-rose-500/50 cursor-pointer transition-all">
+      <div onclick="filtrerEtOuvrirCatalogue('anniversaire')" class="p-3.5 sm:p-4 bg-slate-900/60 border border-slate-800 rounded-xl hover:border-rose-500/50 active:bg-slate-800/80 cursor-pointer transition-all touch-manipulation">
         <div class="text-2xl mb-1">🎂</div>
         <div class="text-xs font-bold text-slate-200">Anniversaires</div>
         <div class="text-[10px] text-slate-400">voir les modèles</div>
       </div>
-      <div onclick="filtrerEtOuvrirCatalogue('distance')" class="p-4 bg-slate-900/60 border border-slate-800 rounded-xl hover:border-rose-500/50 cursor-pointer transition-all">
+      <div onclick="filtrerEtOuvrirCatalogue('distance')" class="p-3.5 sm:p-4 bg-slate-900/60 border border-slate-800 rounded-xl hover:border-rose-500/50 active:bg-slate-800/80 cursor-pointer transition-all touch-manipulation">
         <div class="text-2xl mb-1">✈️</div>
         <div class="text-xs font-bold text-slate-200">Distance</div>
         <div class="text-[10px] text-slate-400">voir les modèles</div>
@@ -129,16 +154,16 @@
   </section>
 
   <!-- ================= SECTION 2 : PAGE CATALOGUE ================= -->
-  <section id="page-catalogue" class="hidden z-10 flex-1 max-w-6xl mx-auto w-full px-4 py-8 space-y-6">
+  <section id="page-catalogue" class="hidden z-10 flex-1 max-w-6xl mx-auto w-full px-3 sm:px-4 py-6 sm:py-8 space-y-4 sm:space-y-6">
     
-    <div class="text-center space-y-2">
-      <h2 class="font-cursive text-4xl text-rose-400">Catalogue des Lettres</h2>
-      <p class="text-xs text-slate-400">Sélectionnez une case pour voir les détails ou achetez directement.</p>
+    <div class="text-center space-y-1 sm:space-y-2">
+      <h2 class="font-cursive text-3xl sm:text-4xl text-rose-400">Catalogue des Lettres</h2>
+      <p class="text-[11px] sm:text-xs text-slate-400">Sélectionnez une case pour voir les détails ou achetez directement.</p>
     </div>
 
     <!-- Filtres & Barre de recherche -->
-    <div class="flex flex-col md:flex-row gap-3 items-center justify-between bg-slate-900/80 p-3 rounded-xl border border-slate-800">
-      <div class="flex gap-2 overflow-x-auto w-full md:w-auto" id="categories-tabs">
+    <div class="flex flex-col md:flex-row gap-3 items-center justify-between bg-slate-900/80 p-2.5 sm:p-3 rounded-2xl border border-slate-800 shadow-md">
+      <div class="flex gap-2 overflow-x-auto w-full md:w-auto no-scrollbar touch-pan-x py-1" id="categories-tabs">
         <!-- Généré par JS -->
       </div>
       
@@ -147,52 +172,54 @@
         id="search-input" 
         placeholder="🔍 Rechercher un mot-clé..." 
         oninput="filtrerLettres()"
-        class="w-full md:w-64 bg-slate-950 border border-slate-800 rounded-lg px-3 py-1.5 text-xs text-slate-200 focus:outline-none focus:border-rose-500 transition-all"
+        class="w-full md:w-64 bg-slate-950 border border-slate-800 rounded-xl px-3.5 py-2.5 text-base sm:text-xs text-slate-200 focus:outline-none focus:border-rose-500 transition-all placeholder:text-slate-500"
       />
     </div>
 
     <!-- Grille des cases (Cards) -->
-    <div id="letters-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+    <div id="letters-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4">
       <!-- Injectées par JS -->
     </div>
   </section>
 
   <!-- ================= MODALE INTERACTIVE / APERÇU DE LA LETTRE ================= -->
-  <div id="letter-modal" class="fixed inset-0 bg-slate-950/90 backdrop-blur-md z-50 hidden flex items-center justify-center p-4 overflow-y-auto">
-    <div class="bg-slate-900 border border-slate-800 w-full max-w-md rounded-2xl p-5 relative shadow-2xl space-y-4">
+  <div id="letter-modal" class="fixed inset-0 bg-slate-950/90 backdrop-blur-md z-50 hidden flex items-center justify-center p-3 sm:p-4 overflow-y-auto pt-safe pb-safe">
+    <div class="bg-slate-900 border border-slate-800/80 w-full max-w-md md:max-w-xl lg:max-w-2xl rounded-2xl p-5 sm:p-7 relative shadow-2xl space-y-4 max-h-modal overflow-y-auto no-scrollbar my-auto transition-all">
       
       <!-- Bouton Fermer la modale -->
-      <button onclick="fermerModale()" class="absolute top-3 right-3 text-slate-400 hover:text-white text-lg font-bold">✕</button>
+      <button onclick="fermerModale()" class="absolute top-3 right-3 text-slate-400 hover:text-white p-2 min-w-[44px] min-h-[44px] flex items-center justify-center text-xl font-bold touch-manipulation rounded-full active:bg-slate-800 z-10" aria-label="Fermer">✕</button>
 
-      <div class="text-center">
-        <h3 id="modal-title" class="font-cursive text-3xl text-rose-400">Titre de la Lettre</h3>
-        <span class="text-[11px] text-slate-400">Aperçu interactif de l'enveloppe</span>
+      <div class="text-center pr-8 pl-2">
+        <h3 id="modal-title" class="font-cursive text-2xl sm:text-3xl text-rose-400 leading-tight">Titre de la Lettre</h3>
+        <span class="text-[10px] sm:text-[11px] text-slate-400">Aperçu interactif de l'enveloppe</span>
       </div>
 
-      <!-- Animation 3D Enveloppe -->
-      <div class="scene-enveloppe relative w-[280px] h-[190px] mx-auto my-6">
-        <div id="envelope" class="envelope relative w-full h-full bg-love-700 rounded-lg shadow-xl">
-          <div class="flap absolute top-0 left-0"></div>
-          
-          <div class="letter absolute bottom-2 left-2.5 w-[260px] h-[170px] bg-rose-50 text-slate-800 rounded p-3 flex flex-col justify-between text-center font-cursive text-base shadow-md">
-            <div class="text-left text-[9px] font-sans text-rose-800 font-bold uppercase" id="letter-dest">À : Mon Amour</div>
-            <div class="space-y-1 my-auto text-sm" id="letter-body"></div>
-            <div class="text-right text-[9px] font-sans text-rose-800 font-bold uppercase" id="letter-sender">De : Ton Âme Sœur</div>
-          </div>
+      <!-- Animation 3D Enveloppe avec mise à l'échelle responsive -->
+      <div class="w-full flex justify-center items-center py-2 overflow-hidden">
+        <div class="scene-enveloppe relative w-[280px] max-w-[85vw] h-[190px] mx-auto my-2 shrink-0">
+          <div id="envelope" class="envelope relative w-full h-full bg-love-700 rounded-lg shadow-xl">
+            <div class="flap absolute top-0 left-0"></div>
+            
+            <div class="letter absolute bottom-2 left-2.5 w-[calc(100%-20px)] h-[170px] bg-rose-50 text-slate-800 rounded p-3 flex flex-col justify-between text-center font-cursive text-base shadow-md">
+              <div class="text-left text-[9px] font-sans text-rose-800 font-bold uppercase" id="letter-dest">À : Mon Amour</div>
+              <div class="space-y-1 my-auto text-xs sm:text-sm overflow-y-auto max-h-[110px] no-scrollbar px-1" id="letter-body"></div>
+              <div class="text-right text-[9px] font-sans text-rose-800 font-bold uppercase" id="letter-sender">De : Ton Âme Sœur</div>
+            </div>
 
-          <div class="pocket absolute bottom-0 left-0"></div>
+            <div class="pocket absolute bottom-0 left-0"></div>
+          </div>
         </div>
       </div>
 
       <!-- Contrôles et Paiement -->
-      <div class="space-y-3 text-center">
+      <div class="space-y-3 text-center pt-1">
         
         <!-- BLOC PAIEMENT (VERROUILLÉ) -->
         <div id="block-locked" class="space-y-3">
-          <p class="text-xs text-slate-400">Tarif unique : <strong class="text-rose-400">600 FCFA</strong></p>
+          <p class="text-xs text-slate-400">Tarif unique : <strong class="text-rose-400 text-sm">600 FCFA</strong></p>
           
           <!-- Widget Chariow Intégré & Stylisé aux Couleurs du Site -->
-          <div class="overflow-hidden rounded-xl bg-slate-950 p-2 border border-slate-800 flex justify-center">
+          <div class="overflow-hidden rounded-xl bg-slate-950 p-2 sm:p-3 border border-slate-800/80 flex justify-center items-center w-full min-h-[50px]">
             <div id="chariow-widget" 
                  data-product-id="prd_zjdp8n4p"
                  data-store-domain="mkiewzpt.mychariow.market"
@@ -202,35 +229,35 @@
                  data-cta-animation="shine"
                  data-locale="fr"
                  data-primary-color="#f43f5e"
-                 data-background-color="#0f172a">
+                 data-background-color="#0f172a"
+                 data-redirect-url="?paye=true"
+                 class="w-full">
             </div>
           </div>
 
           <!-- Bouton de secours / Déclencheur manuel Chariow -->
-          <button onclick="payerAvecChariow()" class="w-full py-2 bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold rounded-xl text-xs transition-all border border-slate-700">
+          <button id="btn-payer" onclick="payerAvecChariow()" class="w-full py-3 min-h-[44px] bg-slate-800 hover:bg-slate-700 active:bg-slate-900 text-slate-300 font-semibold rounded-xl text-xs transition-all border border-slate-700/80 touch-manipulation flex items-center justify-center">
             Payer ou Valider la transaction
           </button>
         </div>
 
         <!-- BLOC ACTIONS (DÉBLOQUÉ) -->
-         <div id="block-unlocked" class="hidden space-y-4">
-  
-  <div class="bg-emerald-950/40 border border-emerald-500/30 rounded-xl p-3 text-center space-y-2">
-    <img src="image/img.jpeg" alt="Achat confirmé" class="w-full max-w-[220px] mx-auto rounded-lg shadow-md border border-emerald-500/20 mb-2">
-    <p class="text-xs font-bold text-emerald-400">🎉 Achat confirmé ! Votre lettre est débloquée.</p>
-  </div>
-        <div id="block-unlocked" class="hidden space-y-2">
-          <p class="text-xs text-emerald-400 font-medium">✨ Lettre débloquée !</p>
-          <div class="flex gap-2">
-            <button onclick="ouvrirEnveloppe()" class="flex-1 py-2 bg-rose-600 hover:bg-rose-500 text-white font-semibold rounded-lg text-xs transition-all">💌 Ouvrir</button>
-            <button onclick="fermerEnveloppe()" class="flex-1 py-2 bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold rounded-lg text-xs transition-all">🔒 Fermer</button>
+        <div id="block-unlocked" class="hidden space-y-3">
+          <div class="bg-emerald-950/40 border border-emerald-500/30 rounded-xl p-3 text-center space-y-2">
+            <img src="image/img.jpeg" alt="Achat confirmé" class="w-full max-w-[200px] mx-auto rounded-lg shadow-md border border-emerald-500/20 mb-1 object-cover max-h-[140px]">
+            <p class="text-xs font-bold text-emerald-400">🎉 Achat confirmé ! Votre lettre est débloquée.</p>
           </div>
           
-          <button onclick="telechargerLettre()" class="w-full py-2 bg-rose-950/60 hover:bg-rose-900/60 text-rose-200 border border-rose-800/40 font-medium rounded-lg text-xs flex items-center justify-center gap-1.5 transition-all">
+          <div class="flex gap-2">
+            <button onclick="ouvrirEnveloppe()" class="flex-1 py-2.5 min-h-[44px] bg-rose-600 hover:bg-rose-500 active:bg-rose-700 text-white font-semibold rounded-xl text-xs transition-all touch-manipulation">💌 Ouvrir</button>
+            <button onclick="fermerEnveloppe()" class="flex-1 py-2.5 min-h-[44px] bg-slate-800 hover:bg-slate-700 active:bg-slate-900 text-slate-300 font-semibold rounded-xl text-xs transition-all touch-manipulation">🔒 Fermer</button>
+          </div>
+          
+          <button onclick="telechargerLettre()" class="w-full py-2.5 min-h-[44px] bg-rose-950/60 hover:bg-rose-900/60 active:bg-rose-900/80 text-rose-200 border border-rose-800/40 font-medium rounded-xl text-xs flex items-center justify-center gap-1.5 transition-all touch-manipulation">
             📥 Télécharger la lettre 
           </button>
 
-          <button onclick="partagerSurWhatsApp()" class="w-full py-2 bg-emerald-700/30 hover:bg-emerald-700/50 text-emerald-300 border border-emerald-600/30 font-medium rounded-lg text-xs transition-all">
+          <button onclick="partagerSurWhatsApp()" class="w-full py-2.5 min-h-[44px] bg-emerald-700/30 hover:bg-emerald-700/50 active:bg-emerald-700/60 text-emerald-300 border border-emerald-600/30 font-medium rounded-xl text-xs transition-all touch-manipulation flex items-center justify-center">
             📲 Partager sur WhatsApp
           </button>
         </div>
@@ -240,7 +267,7 @@
     </div>
   </div>
 
-  <footer class="text-center text-slate-600 text-xs py-4 border-t border-slate-900 mt-8 z-10">
+  <footer class="text-center text-slate-600 text-[11px] sm:text-xs py-4 border-t border-slate-900 mt-6 z-10 pb-safe">
     &copy; Lettres d'Amour
   </footer>
 
@@ -248,8 +275,9 @@
   <script>
     window.addEventListener('message', function(event) {
       if (event.data && (event.data.type === 'chariow_success' || event.data.status === 'success' || event.data === 'payment_success')) {
-        if (typeof window.payerAvecChariow === 'function') {
-          window.payerAvecChariow();
+        localStorage.setItem('just_paid', 'true');
+        if (typeof window.simulerDeblocage === 'function') {
+          window.simulerDeblocage();
         } else {
           document.getElementById('block-locked')?.classList.add('hidden');
           document.getElementById('block-unlocked')?.classList.remove('hidden');
@@ -258,6 +286,6 @@
     });
   </script>
 
-  <script type="module" src="script.js"></script>
+  <script type="module" src="script.js?v=2"></script>
 </body>
 </html>

@@ -3,7 +3,7 @@ export const lettresPardon = [
     id: "pardon-1",
     titre: "Écho de mon regret",
     prix: "600 FCFA",
-    lienChariow: "https://chariow.com/p/lettre-tau.vercel.app",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -25,7 +25,7 @@ export const lettresPardon = [
     id: "pardon-2",
     titre: "La promesse d'un renouveau",
     prix: "600 FCFA",
-    lienChariow: "https://chariow.com/p/lettre-tau.vercel.app",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -46,7 +46,7 @@ export const lettresPardon = [
     id: "pardon-3",
     titre: "Lumière après l'orage",
     prix: "600 FCFA",
-    lienChariow: "https://chariow.com/p/lettre-tau.vercel.app",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -67,7 +67,7 @@ export const lettresPardon = [
     id: "pardon-4",
     titre: "Au nom de notre amour",
     prix: "600 FCFA",
-    lienChariow: "https://chariow.com/p/lettre-tau.vercel.app",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [

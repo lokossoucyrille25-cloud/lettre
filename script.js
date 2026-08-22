@@ -70,11 +70,19 @@ function initialiserBaseDeDonnees() {
 
 function trouverLettreParId(id) {
   if (!id) return null;
+  // Recherche exacte par ID
   for (const catKey in databaseGlobal) {
     const trouvee = databaseGlobal[catKey].find(l => String(l.id) === String(id));
     if (trouvee) {
       categorieActive = catKey;
       return trouvee;
+    }
+  }
+  // Fallback de sécurité : renvoie la première lettre disponible
+  for (const catKey in databaseGlobal) {
+    if (databaseGlobal[catKey] && databaseGlobal[catKey].length > 0) {
+      categorieActive = catKey;
+      return databaseGlobal[catKey][0];
     }
   }
   return null;
@@ -86,32 +94,57 @@ function trouverLettreParId(id) {
 function verifierRetourPaiement() {
   const urlParams = new URLSearchParams(window.location.search);
 
-  // Détection si on revient de Chariow (via n'importe quel paramètre de succès)
-  const hasPayeParam = urlParams.has('paye') || urlParams.has('succes') || urlParams.has('letterId') || urlParams.has('status');
-  const letterIdFromUrl = urlParams.get('letterId');
-  const pendingLetterId = localStorage.getItem('pending_letter_id');
+  // Si le site est chargé dans un iframe (ex: redirection à l'intérieur du widget Chariow)
+  if (window !== window.top) {
+    window.parent.postMessage('payment_success', '*');
+    document.body.innerHTML = '<div style="color:white; text-align:center; padding:20px; font-family:sans-serif;">Paiement validé ! Déblocage...</div>';
+    return;
+  }
 
-  const targetLetterId = letterIdFromUrl || pendingLetterId;
+  const cameFromChariow = document.referrer && document.referrer.includes('chariow.com');
+  const paymentStarted = localStorage.getItem('payment_started') === 'true';
 
-  // Si le client revient du paiement Chariow
-  if (hasPayeParam && targetLetterId) {
-    // 1. Débloquer définitivement la lettre
+  // Détection souple du paramètre de retour dans l'URL pour la fenêtre principale
+  const hasPayeParam = urlParams.has('paye') || 
+                       urlParams.has('succes') || 
+                       urlParams.has('status') || 
+                       urlParams.has('transaction_id') ||
+                       window.location.search.includes('paye') ||
+                       localStorage.getItem('just_paid') === 'true' ||
+                       cameFromChariow ||
+                       paymentStarted;
+
+  if (hasPayeParam) {
+    const letterIdFromUrl = urlParams.get('letterId');
+    const pendingLetterId = localStorage.getItem('pending_letter_id') || sessionStorage.getItem('pending_letter_id');
+
+    // Nettoyage immédiat du flag pour éviter un déblocage en boucle à chaque visite
+    localStorage.removeItem('payment_started');
+
+    // 1. Récupération de l'ID avec résolution du fallback exact
+    let targetLetterId = letterIdFromUrl || pendingLetterId || "1";
+    const lettreFinale = trouverLettreParId(targetLetterId);
+    if (lettreFinale) {
+      targetLetterId = lettreFinale.id;
+    }
+
+    // 2. Déblocage effectif
     ajouterLettreAchetee(targetLetterId);
 
-    // Supprimer la mémoire temporaire d'attente
+    // Nettoyage de la mémoire temporaire
     localStorage.removeItem('pending_letter_id');
+    sessionStorage.removeItem('pending_letter_id');
+    localStorage.removeItem('just_paid');
 
-    // Nettoyer l'URL proprement sans recharger
+    // Nettoyage propre de l'URL sans rafraîchir
     if (window.history && window.history.replaceState) {
       const cleanUrl = window.location.origin + window.location.pathname;
       window.history.replaceState({}, document.title, cleanUrl);
     }
 
-    // 2. Basculer directement sur le catalogue et ouvrir la modale
-    setTimeout(() => {
-      afficherPage('catalogue');
-      ouvrirModaleAvecLettre(targetLetterId);
-    }, 200);
+    // 3. Basculement immédiat vers le catalogue et ouverture de la modale
+    afficherPage('catalogue');
+    ouvrirModaleAvecLettre(targetLetterId);
   }
 }
 
@@ -199,8 +232,8 @@ function chargerGrille() {
       </div>
 
       <div class="flex gap-2 pt-2">
-        <button onclick='ouvrirModaleAvecLettre("${lettre.id}")' class="w-full py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold rounded-lg transition-colors">
-          👁️ ${dejaPossede ? 'Lire la lettre' : 'Aperçu & Déblocage'}
+        <button onclick='ouvrirModaleAvecLettre("${lettre.id}")' class="w-full py-2 bg-rose-600 hover:bg-rose-500 text-white text-xs font-bold rounded-lg transition-colors shadow-md">
+          ${dejaPossede ? '📖 Lire la lettre' : '👁️ Aperçu & Déblocage'}
         </button>
       </div>
     `;
@@ -217,6 +250,10 @@ function filtrerLettres() {
 function ouvrirModaleAvecLettre(id) {
   lettreActive = trouverLettreParId(id);
   if (!lettreActive) return;
+
+  // Sauvegarde préventive au cas où le widget forcerait un rechargement
+  localStorage.setItem('pending_letter_id', lettreActive.id);
+  sessionStorage.setItem('pending_letter_id', lettreActive.id);
 
   estDebloque = estLettreAchetee(lettreActive.id);
   fermerEnveloppe();
@@ -376,23 +413,27 @@ window.fermerEnveloppe = fermerEnveloppe;
 window.simulerDeblocage = simulerDeblocage;
 window.telechargerLettre = telechargerLettre;
 window.partagerSurWhatsApp = partagerSurWhatsApp;
+window.payerAvecChariow = payerAvecChariow;
 
-// --- INITIALISATION AU CHARGEMENT ---
+function payerAvecChariow() {
+  const targetId = lettreActive ? String(lettreActive.id) : "1";
 
-document.addEventListener("DOMContentLoaded", () => {
+  // Sauvegarde systématique dans localStorage et sessionStorage
+  localStorage.setItem('pending_letter_id', targetId);
+  sessionStorage.setItem('pending_letter_id', targetId);
+  localStorage.setItem('payment_started', 'true');
+
+  // Redirection vers le produit Chariow
+  window.location.href = "https://chariow.com/p/prd_zjdp8n4p";
+}
+
+function initApp() {
   initialiserBaseDeDonnees();
   verifierRetourPaiement();
+}
 
-  const btnPayer = document.getElementById('btn-payer');
-  if (btnPayer) {
-    btnPayer.addEventListener('click', () => {
-      const targetId = lettreActive ? String(lettreActive.id) : "1";
-
-      // 1. Sauvegarder l'ID de la lettre dans localStorage
-      localStorage.setItem('pending_letter_id', targetId);
-
-      // 2. Redirection directe vers la page Chariow (sur GitHub Pages, pas besoin d'API backend)
-      window.location.href = "https://chariow.com/p/prd_5ecz9fc9";
-    });
-  }
-});
+if (document.readyState === 'loading') {
+  document.addEventListener("DOMContentLoaded", initApp);
+} else {
+  initApp();
+}

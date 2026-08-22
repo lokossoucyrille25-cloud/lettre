@@ -3,7 +3,7 @@ export const lettresDeclaration = [
     id: "amour-1",
     titre: "L'attraction magnétique",
     prix: "600 FCFA",
-    lienChariow: "https://chariow.com/p/https://lettre-tau.vercel.app",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -23,7 +23,7 @@ export const lettresDeclaration = [
     id: "amour-2",
     titre: "La promesse d'une aventure",
     prix: "600 FCFA",
-    lienChariow: "https://chariow.com/p/lettre-tau.vercel.app",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -43,7 +43,7 @@ export const lettresDeclaration = [
     id: "amour-3",
     titre: "Le feu couvant",
     prix: "600 FCFA",
-    lienChariow: "https://chariow.com/p/lettre-tau.vercel.app",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -63,7 +63,7 @@ export const lettresDeclaration = [
     id: "amour-4",
     titre: "L'aveu passionné",
     prix: "600 FCFA",
-    lienChariow: "https://chariow.com/p/lettre-tau.vercel.app",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -83,7 +83,7 @@ export const lettresDeclaration = [
     id: "amour-5",
     titre: "Le charme irrésistible",
     prix: "600 FCFA",
-    lienChariow: "https://chariow.com/p/lettre-tau.vercel.app",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [

@@ -3,7 +3,7 @@ export const lettresDistance = [
     id: "distance-01",
     titre: "Pensée d'Ailleurs",
     prix: "600 FCFA",
-    lienChariow: "https://chariow.com/p/lettre-tau.vercel.app",
+    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
