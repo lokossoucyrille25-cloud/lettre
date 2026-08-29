@@ -296,7 +296,13 @@ function ouvrirModaleAvecLettre(id) {
 
 function fermerModale() {
   const modalEl = document.getElementById("letter-modal");
-  if (modalEl) modalEl.classList.add("hidden");
+  if (modalEl) {
+    modalEl.classList.add("hidden");
+    modalEl.classList.remove("bg-slate-950");
+    modalEl.classList.add("bg-slate-950/90");
+  }
+  document.querySelector("nav")?.classList.remove("hidden");
+  document.getElementById("page-catalogue")?.classList.remove("hidden");
 }
 
 function ouvrirEnveloppe() {
@@ -324,10 +330,18 @@ function simulerDeblocage() {
 function mettreAJourUIModale() {
   const locked = document.getElementById("block-locked");
   const unlocked = document.getElementById("block-unlocked");
+  const modalEl = document.getElementById("letter-modal");
 
   if (estDebloque) {
     locked?.classList.add("hidden");
     unlocked?.classList.remove("hidden");
+    
+    // Après paiement, seul la lettre payée s'affiche (on cache l'arrière-plan)
+    document.getElementById("page-accueil")?.classList.add("hidden");
+    document.getElementById("page-catalogue")?.classList.add("hidden");
+    document.querySelector("nav")?.classList.add("hidden");
+    modalEl?.classList.remove("bg-slate-950/90");
+    modalEl?.classList.add("bg-slate-950");
   } else {
     locked?.classList.remove("hidden");
     unlocked?.classList.add("hidden");
@@ -396,7 +410,8 @@ function telechargerLettre() {
 }
 
 function partagerSurWhatsApp() {
-  const msg = `J'ai créé une lettre d'amour animée pour toi ! 💌 Ouvre-la ici : ${window.location.href}`;
+  const shareUrl = window.location.origin + window.location.pathname + '?lettre=' + (lettreActive ? lettreActive.id : '');
+  const msg = `J'ai créé une lettre d'amour animée pour toi ! 💌 Ouvre-la ici : ${shareUrl}`;
   window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(msg)}`, "_blank");
 }
 
@@ -430,6 +445,15 @@ function payerAvecChariow() {
 function initApp() {
   initialiserBaseDeDonnees();
   verifierRetourPaiement();
+  
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.has('lettre')) {
+    const lettreId = urlParams.get('lettre');
+    setTimeout(() => {
+      afficherPage('catalogue');
+      ouvrirModaleAvecLettre(lettreId);
+    }, 100);
+  }
 }
 
 if (document.readyState === 'loading') {

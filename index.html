@@ -8,7 +8,8 @@
   <!-- LOGO APP & FAVICON -->
   <link rel="icon" type="image/svg+xml" href="logo.svg" />
   <link rel="apple-touch-icon" href="logo.svg" />
-  <link rel="apple-touch-icon" href="logo-180.png"/>
+  <link rel="apple-touch-icon" href="logo-192.png"/>
+  <link rel="manifest" href="manifest.json" />
   <meta name="theme-color" content="#0f172a" />
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -63,6 +64,29 @@
       width: 100% !important;
       max-width: 100% !important;
       box-sizing: border-box !important;
+    }
+
+    /* Affichage complet de la lettre à l'écran après ouverture */
+    .envelope.open .letter {
+      position: fixed !important;
+      top: 50% !important;
+      left: 50% !important;
+      transform: translate(-50%, -50%) !important;
+      width: 92vw !important;
+      max-width: 500px !important;
+      height: 85vh !important;
+      max-height: 800px !important;
+      z-index: 100 !important;
+      box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.7) !important;
+      border-radius: 16px !important;
+      padding: 1.5rem !important;
+    }
+    .envelope.open .letter #letter-body {
+      max-height: none !important;
+      flex-grow: 1 !important;
+      margin-top: 1rem !important;
+      margin-bottom: 1rem !important;
+      font-size: 1.1rem !important;
     }
   </style>
 
@@ -195,14 +219,14 @@
       </div>
 
       <!-- Animation 3D Enveloppe avec mise à l'échelle responsive -->
-      <div class="w-full flex justify-center items-center py-2 overflow-hidden">
-        <div class="scene-enveloppe relative w-[280px] max-w-[85vw] h-[190px] mx-auto my-2 shrink-0">
+      <div class="w-full flex justify-center items-center py-2 overflow-visible">
+        <div class="scene-enveloppe relative w-[280px] h-[190px] mx-auto my-2 shrink-0" style="transform: scale(min(1, calc(100vw / 310))); transform-origin: top center;">
           <div id="envelope" class="envelope relative w-full h-full bg-love-700 rounded-lg shadow-xl">
             <div class="flap absolute top-0 left-0"></div>
             
             <div class="letter absolute bottom-2 left-2.5 w-[calc(100%-20px)] h-[170px] bg-rose-50 text-slate-800 rounded p-3 flex flex-col justify-between text-center font-cursive text-base shadow-md">
               <div class="text-left text-[9px] font-sans text-rose-800 font-bold uppercase" id="letter-dest">À : Mon Amour</div>
-              <div class="space-y-1 my-auto text-xs sm:text-sm overflow-y-auto max-h-[110px] no-scrollbar px-1" id="letter-body"></div>
+              <div class="space-y-1 my-auto text-[11px] sm:text-xs overflow-y-auto max-h-[115px] px-1" style="scrollbar-width: thin;" id="letter-body"></div>
               <div class="text-right text-[9px] font-sans text-rose-800 font-bold uppercase" id="letter-sender">De : Ton Âme Sœur</div>
             </div>
 
