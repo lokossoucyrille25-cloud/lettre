@@ -29,24 +29,24 @@ app.get('/succes.html', (req, res) => {
 
 // --- API CHECKOUT ---
 app.post('/api/creer-checkout', async (req, res) => {
-  const { letterId, titre, price } = req.body;
+  const { letterId, prenom, nom, email, country, phone, partner } = req.body;
 
   try {
     const response = await axios.post(
       `https://api.chariow.com/v1/checkout`,
       {
         product_id: PRODUCT_ID,
-        email: "client@lettre-amour.com",
-        first_name: "Client",
-        last_name: "Lettre",
+        email: email || "client@lettre-amour.com",
+        first_name: prenom || "Client",
+        last_name: nom || "Lettre",
         phone: {
-          number: "97000000",
-          country_code: "+229"
+          number: phone || "97000000",
+          country_code: country || "+229"
         },
-        redirect_url: `${BASE_URL}/?succes=true&letterId=${encodeURIComponent(letterId || '')}`,
+        redirect_url: `${BASE_URL}/?paye=true&letterId=${encodeURIComponent(letterId || '')}`,
         metadata: {
           letterId: letterId || '',
-          titre: titre || "Lettre d'amour"
+          partner: partner || ''
         }
       },
       {
@@ -58,12 +58,18 @@ app.post('/api/creer-checkout', async (req, res) => {
       }
     );
 
-    const checkoutUrl = response.data?.checkout_url || response.data?.url || `https://chariow.com/p/${PRODUCT_ID}`;
-    return res.json({ checkoutUrl });
+    const checkoutUrl = response.data?.checkout_url || response.data?.url;
+    if (checkoutUrl) {
+      return res.json({ success: true, payment_url: checkoutUrl });
+    } else {
+      console.error("Réponse Chariow inattendue :", response.data);
+      return res.status(500).json({ success: false, message: "URL de paiement non reçue de l'API." });
+    }
 
   } catch (error) {
-    console.error("â Œ Erreur Checkout :", error.response?.data || error.message);
-    return res.status(500).json({ error: "Erreur lors de la création de la session Chariow." });
+    console.error("❌ Erreur Checkout :", error.response?.data || error.message);
+    const apiError = error.response?.data?.message || "Erreur lors de la création de la session Chariow.";
+    return res.status(500).json({ success: false, message: apiError });
   }
 });
 

@@ -437,20 +437,70 @@ window.payerAvecChariow = payerAvecChariow;
 
 async function payerAvecChariow() {
   const btn = document.getElementById("btn-payer");
+  const originalText = btn ? btn.innerHTML : "Débloquer avec Chariow";
+  
+  const prenom = document.getElementById('input-prenom')?.value.trim();
+  const nom = document.getElementById('input-nom')?.value.trim();
+  const email = document.getElementById('input-email')?.value.trim();
+  const country = document.getElementById('input-country')?.value.trim();
+  const phone = document.getElementById('input-phone')?.value.trim();
+  const partner = document.getElementById('input-partner')?.value.trim();
+
+  if (!prenom || !nom || !email || !country || !phone) {
+    alert("Veuillez remplir tous les champs obligatoires.");
+    return;
+  }
+
   if (btn) {
+    btn.innerHTML = `<svg class="animate-spin h-5 w-5 mx-auto text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>`;
     btn.disabled = true;
-    btn.innerText = "Redirection vers le paiement...";
   }
 
   const targetId = lettreActive ? String(lettreActive.id) : "1";
 
-  // Sauvegarde systématique dans localStorage et sessionStorage
+  // Sauvegarde systématique dans localStorage
   localStorage.setItem('pending_letter_id', targetId);
   sessionStorage.setItem('pending_letter_id', targetId);
   localStorage.setItem('payment_started', 'true');
+  if (partner) {
+    localStorage.setItem('partnerName', partner);
+  }
 
-  // Redirection directe vers Chariow
-  window.location.href = "https://chariow.com/p/prd_zjdp8n4p";
+  try {
+    const response = await fetch('/api/creer-checkout', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        letterId: targetId,
+        prenom,
+        nom,
+        email,
+        country,
+        phone,
+        partner
+      })
+    });
+
+    const data = await response.json();
+
+    if (data.success && data.payment_url) {
+      window.location.href = data.payment_url;
+    } else {
+      console.error("Erreur API:", data);
+      alert("Erreur d'initialisation du paiement: " + (data.message || "inconnue"));
+      if (btn) {
+        btn.innerHTML = originalText;
+        btn.disabled = false;
+      }
+    }
+  } catch (error) {
+    console.error("Erreur réseau:", error);
+    alert("Impossible de contacter le serveur de paiement.");
+    if (btn) {
+      btn.innerHTML = originalText;
+      btn.disabled = false;
+    }
+  }
 }
 
 function initApp() {
