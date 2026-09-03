@@ -15,7 +15,7 @@ app.use(express.static(path.join(__dirname)));
 const CHARIOW_API_KEY = process.env.CHARIOW_API_KEY || "sk_9phghyy6_858a46d7cbc51ba7d0de8f68a781895e";
 const CHARIOW_API_URL = process.env.CHARIOW_API_URL || "https://api.chariow.com";
 const PRODUCT_ID = process.env.PRODUCT_ID || "prd_zjdp8n4p";
-const BASE_URL = process.env.BASE_URL || "https://lettre-amour-mu.vercel.app";
+const BASE_URL = process.env.BASE_URL || "https://lettre-tau.vercel.app";
 
 // --- ROUTES STATIQUES ---
 app.get('/', (req, res) => {
@@ -68,7 +68,7 @@ app.post('/api/webhook/chariow', (req, res) => {
 });
 
 // Catch-all
-app.get('*', (req, res) => {
+app.use((req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
