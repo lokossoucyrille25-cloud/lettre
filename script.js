@@ -439,42 +439,18 @@ async function payerAvecChariow() {
   const btn = document.getElementById("btn-payer");
   if (btn) {
     btn.disabled = true;
-    btn.innerText = "Création du paiement...";
+    btn.innerText = "Redirection vers le paiement...";
   }
 
   const targetId = lettreActive ? String(lettreActive.id) : "1";
-  const targetTitre = lettreActive ? lettreActive.titre : "Lettre d'amour";
 
   // Sauvegarde systématique dans localStorage et sessionStorage
   localStorage.setItem('pending_letter_id', targetId);
   sessionStorage.setItem('pending_letter_id', targetId);
   localStorage.setItem('payment_started', 'true');
 
-  try {
-    const response = await fetch('/api/creer-checkout', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ letterId: targetId, titre: targetTitre, price: 600 })
-    });
-    
-    if (!response.ok) {
-      throw new Error(`Erreur HTTP: ${response.status}`);
-    }
-    
-    const data = await response.json();
-    if (data && data.checkoutUrl) {
-      window.location.href = data.checkoutUrl;
-    } else {
-      throw new Error("URL de paiement introuvable.");
-    }
-  } catch (error) {
-    console.error("Erreur de paiement:", error);
-    alert("Impossible d'initialiser le paiement. Veuillez réessayer.");
-    if (btn) {
-      btn.disabled = false;
-      btn.innerText = "Débloquer avec Chariow (600 FCFA)";
-    }
-  }
+  // Redirection directe vers Chariow
+  window.location.href = "https://chariow.com/p/prd_zjdp8n4p";
 }
 
 function initApp() {

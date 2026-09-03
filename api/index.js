@@ -33,12 +33,17 @@ app.post('/api/creer-checkout', async (req, res) => {
 
   try {
     const response = await axios.post(
-      `${CHARIOW_API_URL}/checkout/sessions`,
+      `https://api.chariow.com/v1/checkout`,
       {
         product_id: PRODUCT_ID,
-        amount: price || 600,
+        email: "client@lettre-amour.com",
+        first_name: "Client",
+        last_name: "Lettre",
+        phone: {
+          number: "97000000",
+          country_code: "+229"
+        },
         redirect_url: `${BASE_URL}/?succes=true&letterId=${encodeURIComponent(letterId || '')}`,
-        cancel_url: `${BASE_URL}/`,
         metadata: {
           letterId: letterId || '',
           titre: titre || "Lettre d'amour"
@@ -57,8 +62,8 @@ app.post('/api/creer-checkout', async (req, res) => {
     return res.json({ checkoutUrl });
 
   } catch (error) {
-    console.error("âŒ Erreur Checkout :", error.response?.data || error.message);
-    return res.json({ checkoutUrl: `https://chariow.com/p/${PRODUCT_ID}` });
+    console.error("â Œ Erreur Checkout :", error.response?.data || error.message);
+    return res.status(500).json({ error: "Erreur lors de la création de la session Chariow." });
   }
 });
 
