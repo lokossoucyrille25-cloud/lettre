@@ -3,7 +3,7 @@ export const lettresAnniversaire = [
     id: "anniversaire-01",
     titre: "Explosion de sentiments",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
+    lienChariow: "https://lettre-tau.vercel.app",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -20,7 +20,7 @@ export const lettresAnniversaire = [
     id: "anniversaire-02",
     titre: "Désir incandescent",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
+    lienChariow: "https://lettre-tau.vercel.app",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -37,7 +37,7 @@ export const lettresAnniversaire = [
     id: "anniversaire-03",
     titre: "Fusion des cœurs",
     prix: "500 FCFA",
-    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
+    lienChariow: "https://lettre-tau.vercel.app",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [
@@ -54,7 +54,7 @@ export const lettresAnniversaire = [
     id: "anniversaire-04",
     titre: "Fièvre amoureuse",
     prix: "600 FCFA",
-    lienChariow: "https://chariow.com/p/lokossoucyrille25-cloud.github.io/lettre/",
+    lienChariow: "https://lettre-tau.vercel.app",
     destinataire: "Mon Chéri / Ma Chérie",
     expediteur: "Ton Âme Sœur",
     lignes: [

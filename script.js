@@ -8,7 +8,7 @@ const CATEGORIES = [
   { id: "amour", nom: "❤️ Déclarations" },
   { id: "pardon", nom: "🕊️ Pardons" },
   { id: "anniversaire", nom: "🎂 Anniversaires" },
-  { id: "distance", nom: "✈️ Distance" }
+  { id: "distance", nom: "✈️ Relations à distance" }
 ];
 
 // Agrégation de la banque de données
@@ -271,8 +271,11 @@ function ouvrirModaleAvecLettre(id) {
   if (body) {
     body.innerHTML = "";
     const lignes = Array.isArray(lettreActive.lignes) ? lettreActive.lignes : [];
-    lignes.forEach(line => {
+    lignes.forEach((line, index) => {
       const p = document.createElement("p");
+      p.style.opacity = "0";
+      p.style.animationDelay = `${0.8 + (index * 0.2)}s`;
+      p.className = "line-anim";
       const txt = getLineText(line);
       if (isLineHighlighted(line)) {
         p.innerHTML = `<span class="bg-rose-200 text-rose-900 px-1 py-0.5 rounded font-bold">${txt}</span>`;
@@ -372,6 +375,8 @@ function telechargerLettre() {
     .letter { position: absolute; bottom: 8px; left: 10px; width: 260px; height: 170px; background: #fff1f2; color: #1e293b; border-radius: 6px; padding: 14px; font-family: 'Caveat', cursive; font-size: 1.15rem; transition: transform 0.6s ease-in-out 0.2s, z-index 0.6s ease-in-out 0.2s; z-index: 2; display: flex; flex-direction: column; justify-content: space-between; text-align: center; overflow-y: auto; }
     .envelope.open .flap { transform: rotateX(180deg); z-index: 1; }
     .envelope.open .letter { transform: translateY(-115px); z-index: 3; }
+    @keyframes fadeInUpLine { 0% { opacity: 0; transform: translateY(10px); } 100% { opacity: 1; transform: translateY(0); } }
+    .envelope.open .line-anim { animation: fadeInUpLine 0.6s ease-out forwards; }
   </style>
 </head>
 <body>
@@ -383,7 +388,7 @@ function telechargerLettre() {
         <div class="letter">
           <div class="text-left text-[9px] font-sans text-rose-800 font-bold uppercase">À : ${lettreActive.destinataire || 'Mon Amour'}</div>
           <div class="space-y-1 my-auto text-base">
-            ${lignes.map(l => isLineHighlighted(l) ? `<p><span class="bg-rose-200 text-rose-900 px-1 py-0.5 rounded font-bold">${getLineText(l)}</span></p>` : `<p>${getLineText(l)}</p>`).join('')}
+            ${lignes.map((l, index) => `<p class="line-anim" style="opacity: 0; animation-delay: ${0.8 + (index * 0.2)}s">${isLineHighlighted(l) ? `<span class="bg-rose-200 text-rose-900 px-1 py-0.5 rounded font-bold">${getLineText(l)}</span>` : getLineText(l)}</p>`).join('')}
           </div>
           <div class="text-right text-[9px] font-sans text-rose-800 font-bold uppercase">De : ${lettreActive.expediteur || 'Ton Âme Sœur'}</div>
         </div>
@@ -431,6 +436,12 @@ window.partagerSurWhatsApp = partagerSurWhatsApp;
 window.payerAvecChariow = payerAvecChariow;
 
 function payerAvecChariow() {
+  const btn = document.getElementById("btn-payer");
+  if (btn) {
+    btn.disabled = true;
+    btn.innerText = "Redirection vers Chariow...";
+  }
+
   const targetId = lettreActive ? String(lettreActive.id) : "1";
 
   // Sauvegarde systématique dans localStorage et sessionStorage

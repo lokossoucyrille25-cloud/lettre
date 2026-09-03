@@ -90,20 +90,7 @@
     }
   </style>
 
-  <!-- Chargement Asynchrone du Widget Chariow -->
-  <script>
-    (function() {
-      var script = document.createElement('script');
-      script.src = 'https://js.chariowcdn.com/v1/widget.min.js';
-      script.async = true;
-      document.head.appendChild(script);
-
-      var link = document.createElement('link');
-      link.rel = 'stylesheet';
-      link.href = 'https://js.chariowcdn.com/v1/widget.min.css';
-      document.head.appendChild(link);
-    })();
-  </script>
+  <!-- Le widget Chariow a été retiré au profit de l'API Checkout -->
 </head>
 <body class="bg-slate-950 text-slate-100 font-sans min-h-screen-dvh flex flex-col justify-between relative overflow-x-hidden pt-safe pb-safe selection:bg-rose-500 selection:text-white">
 
@@ -242,26 +229,8 @@
         <div id="block-locked" class="space-y-3">
           <p class="text-xs text-slate-400">Tarif unique : <strong class="text-rose-400 text-sm">600 FCFA</strong></p>
           
-          <!-- Widget Chariow Intégré & Stylisé aux Couleurs du Site -->
-          <div class="overflow-hidden rounded-xl bg-slate-950 p-2 sm:p-3 border border-slate-800/80 flex justify-center items-center w-full min-h-[50px]">
-            <div id="chariow-widget" 
-                 data-product-id="prd_zjdp8n4p"
-                 data-store-domain="mkiewzpt.mychariow.market"
-                 data-style="frame"
-                 data-border-style="rounded"
-                 data-cta-width="full"
-                 data-cta-animation="shine"
-                 data-locale="fr"
-                 data-primary-color="#f43f5e"
-                 data-background-color="#0f172a"
-                 data-redirect-url="?paye=true"
-                 class="w-full">
-            </div>
-          </div>
-
-          <!-- Bouton de secours / Déclencheur manuel Chariow -->
-          <button id="btn-payer" onclick="payerAvecChariow()" class="w-full py-3 min-h-[44px] bg-slate-800 hover:bg-slate-700 active:bg-slate-900 text-slate-300 font-semibold rounded-xl text-xs transition-all border border-slate-700/80 touch-manipulation flex items-center justify-center">
-            Payer ou Valider la transaction
+          <button id="btn-payer" onclick="payerAvecChariow()" class="w-full py-3 min-h-[44px] bg-rose-600 hover:bg-rose-500 active:bg-rose-700 text-white font-semibold rounded-xl text-xs transition-all shadow-md touch-manipulation flex items-center justify-center">
+            Débloquer avec Chariow (600 FCFA)
           </button>
         </div>
 
@@ -295,20 +264,7 @@
     &copy; Lettres d'Amour
   </footer>
 
-  <!-- Listener d'événement de paiement automatique Chariow -->
-  <script>
-    window.addEventListener('message', function(event) {
-      if (event.data && (event.data.type === 'chariow_success' || event.data.status === 'success' || event.data === 'payment_success')) {
-        localStorage.setItem('just_paid', 'true');
-        if (typeof window.simulerDeblocage === 'function') {
-          window.simulerDeblocage();
-        } else {
-          document.getElementById('block-locked')?.classList.add('hidden');
-          document.getElementById('block-unlocked')?.classList.remove('hidden');
-        }
-      }
-    });
-  </script>
+  <!-- Plus de listener widget Chariow -->
 
   <script type="module" src="script.js?v=2"></script>
 </body>
