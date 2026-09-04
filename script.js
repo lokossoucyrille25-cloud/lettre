@@ -62,6 +62,17 @@ function ajouterLettreAchetee(id) {
   }
 }
 
+function retirerLettreAchetee(id) {
+  if (!id) return;
+  try {
+    let liste = JSON.parse(localStorage.getItem('lettres_debloquees') || '[]');
+    liste = liste.filter(item => String(item) !== String(id));
+    localStorage.setItem('lettres_debloquees', JSON.stringify(liste));
+  } catch (e) {
+    console.error("Erreur écriture localStorage", e);
+  }
+}
+
 function initialiserBaseDeDonnees() {
   CATEGORIES.forEach(cat => {
     databaseGlobal[cat.id] = MES_LETTRES_PERSONNALISEES[cat.id] || [];
@@ -290,11 +301,6 @@ function ouvrirModaleAvecLettre(id) {
 
   const modalEl = document.getElementById("letter-modal");
   if (modalEl) modalEl.classList.remove("hidden");
-
-  // Dépliage automatique si la lettre est débloquée
-  if (estDebloque) {
-    setTimeout(ouvrirEnveloppe, 300);
-  }
 }
 
 function fermerModale() {
@@ -327,7 +333,16 @@ function simulerDeblocage() {
   estDebloque = true;
   mettreAJourUIModale();
   chargerGrille();
-  ouvrirEnveloppe();
+}
+
+function reverrouillerLettre() {
+  if (lettreActive) {
+    retirerLettreAchetee(lettreActive.id);
+  }
+  estDebloque = false;
+  mettreAJourUIModale();
+  chargerGrille();
+  fermerEnveloppe();
 }
 
 function mettreAJourUIModale() {
@@ -412,12 +427,18 @@ function telechargerLettre() {
   a.click();
   document.body.removeChild(a);
   URL.revokeObjectURL(url);
+  
+  // Rebloquer la lettre après téléchargement
+  setTimeout(reverrouillerLettre, 1500);
 }
 
 function partagerSurWhatsApp() {
   const shareUrl = window.location.origin + window.location.pathname + '?lettre=' + (lettreActive ? lettreActive.id : '');
   const msg = `J'ai créé une lettre d'amour animée pour toi ! 💌 Ouvre-la ici : ${shareUrl}`;
   window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(msg)}`, "_blank");
+  
+  // Rebloquer la lettre après partage
+  setTimeout(reverrouillerLettre, 1500);
 }
 
 // Export global vers window
