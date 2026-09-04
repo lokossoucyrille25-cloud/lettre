@@ -272,8 +272,11 @@ function ouvrirModaleAvecLettre(id) {
   const titleEl = document.getElementById("modal-title");
   if (titleEl) titleEl.innerText = lettreActive.titre || "Lettre d'amour";
 
+  const partnerName = localStorage.getItem('partnerName');
+  const destinataire = partnerName ? partnerName : (lettreActive.destinataire || 'Mon Amour');
+
   const destEl = document.getElementById("letter-dest");
-  if (destEl) destEl.innerText = `À : ${lettreActive.destinataire || 'Mon Amour'}`;
+  if (destEl) destEl.innerText = `À : ${destinataire}`;
 
   const senderEl = document.getElementById("letter-sender");
   if (senderEl) senderEl.innerText = `De : ${lettreActive.expediteur || 'Ton Âme Sœur'}`;
@@ -372,6 +375,8 @@ function telechargerLettre() {
   if (!estDebloque || !lettreActive) return;
 
   const lignes = Array.isArray(lettreActive.lignes) ? lettreActive.lignes : [];
+  const partnerName = localStorage.getItem('partnerName');
+  const destinataire = partnerName ? partnerName : (lettreActive.destinataire || 'Mon Amour');
 
   const contenuHTML = `<!DOCTYPE html>
 <html lang="fr">
@@ -401,7 +406,7 @@ function telechargerLettre() {
       <div id="envelope" class="envelope">
         <div class="flap"></div>
         <div class="letter">
-          <div class="text-left text-[9px] font-sans text-rose-800 font-bold uppercase">À : ${lettreActive.destinataire || 'Mon Amour'}</div>
+          <div class="text-left text-[9px] font-sans text-rose-800 font-bold uppercase">À : ${destinataire}</div>
           <div class="space-y-1 my-auto text-base">
             ${lignes.map((l, index) => `<p class="line-anim" style="opacity: 0; animation-delay: ${0.8 + (index * 0.2)}s">${isLineHighlighted(l) ? `<span class="bg-rose-200 text-rose-900 px-1 py-0.5 rounded font-bold">${getLineText(l)}</span>` : getLineText(l)}</p>`).join('')}
           </div>
