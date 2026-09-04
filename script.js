@@ -2,7 +2,7 @@ import { lettresDeclaration } from './declaration.js';
 import { lettresPardon } from './pardon.js';
 import { lettresAnniversaire } from './anniversaire.js';
 import { lettresDistance } from './distance.js';
-import { startAnimation1, startAnimation2, startAnimation3 } from './animations.js';
+import { startAnimation1, startAnimation2, startAnimation3 } from './animations.js?v=3';
 
 // Configuration des catégories
 const CATEGORIES = [
@@ -334,60 +334,24 @@ function ouvrirEnveloppe() {
       const lignes = Array.isArray(lettreActive.lignes) ? lettreActive.lignes : [];
       
       const animations = [startAnimation1, startAnimation2, startAnimation3];
-      const animAleatoire = animations[Math.floor(Math.random() * animations.length)];
+      let currentAnimIndex = parseInt(localStorage.getItem('anim_index') || '0', 10);
+      const animAleatoire = animations[currentAnimIndex % animations.length];
+      localStorage.setItem('anim_index', (currentAnimIndex + 1).toString());
       
       reader.classList.remove("hidden");
       reader.classList.add("flex");
       
-      currentAnimationCleanup = animAleatoire(canvas);
-
-      let index = 0;
-      let activeLines = [];
-      let lineIntervalId = null;
-
-      function showNextLine() {
-        if (index >= lignes.length) {
-          if (lineIntervalId) clearInterval(lineIntervalId);
-          return;
-        }
-        
-        const line = lignes[index];
-        const p = document.createElement("p");
-        p.style.opacity = "0";
-        p.className = "line-anim";
-        const txt = getLineText(line);
-        if (isLineHighlighted(line)) {
-          p.innerHTML = `<span class="text-rose-400 font-bold drop-shadow-[0_2px_5px_rgba(0,0,0,1)]">${txt}</span>`;
-        } else {
-          p.innerText = txt;
-        }
-        readerContent.appendChild(p);
-        activeLines.push(p);
-
-        setTimeout(() => {
-          while (readerContent.scrollHeight > readerContent.clientHeight && activeLines.length > 1) {
-            const oldestLine = activeLines.shift();
-            oldestLine.classList.remove("line-anim");
-            oldestLine.classList.add("line-fade-out");
-            setTimeout(() => {
-              if (oldestLine.parentNode) oldestLine.parentNode.removeChild(oldestLine);
-            }, 600);
-          }
-        }, 50);
-
-        index++;
-      }
-
-      setTimeout(() => {
-        showNextLine();
-        lineIntervalId = setInterval(showNextLine, 2000);
-      }, 500);
+      const textRenderer = new CanvasTextRenderer(lignes);
+      currentAnimationCleanup = animAleatoire(canvas, (ctx, W, H) => {
+        textRenderer.draw(ctx, W, H);
+      });
+      textRenderer.start(2000);
 
       const dureeTotale = (lignes.length * 2000) + 8000;
       
       setTimeout(() => {
-        if (lineIntervalId) clearInterval(lineIntervalId);
         if (currentAnimationCleanup) currentAnimationCleanup();
+        textRenderer.stop();
         currentAnimationCleanup = null;
         
         reader.classList.add("hidden");
@@ -595,7 +559,9 @@ async function telechargerLettre() {
   const textRenderer = new CanvasTextRenderer(lignes);
   
   const animations = [startAnimation1, startAnimation2, startAnimation3];
-  const animAleatoire = animations[Math.floor(Math.random() * animations.length)];
+  let currentAnimIndex = parseInt(localStorage.getItem('anim_index') || '0', 10);
+  const animAleatoire = animations[currentAnimIndex % animations.length];
+  localStorage.setItem('anim_index', (currentAnimIndex + 1).toString());
   
   const cleanupAnim = animAleatoire(canvas, (ctx, W, H) => {
     textRenderer.draw(ctx, W, H);
