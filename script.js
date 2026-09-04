@@ -42,7 +42,7 @@ function isLineHighlighted(line) {
 function estLettreAchetee(id) {
   if (!id) return false;
   try {
-    const liste = JSON.parse(localStorage.getItem('lettres_debloquees') || '[]');
+    const liste = JSON.parse(localStorage.getItem('lettres_debloquees_v2') || '[]');
     return liste.some(item => String(item) === String(id));
   } catch (e) {
     return false;
@@ -52,10 +52,10 @@ function estLettreAchetee(id) {
 function ajouterLettreAchetee(id) {
   if (!id) return;
   try {
-    let liste = JSON.parse(localStorage.getItem('lettres_debloquees') || '[]');
+    let liste = JSON.parse(localStorage.getItem('lettres_debloquees_v2') || '[]');
     if (!liste.some(item => String(item) === String(id))) {
       liste.push(String(id));
-      localStorage.setItem('lettres_debloquees', JSON.stringify(liste));
+      localStorage.setItem('lettres_debloquees_v2', JSON.stringify(liste));
     }
   } catch (e) {
     console.error("Erreur écriture localStorage", e);
@@ -65,9 +65,9 @@ function ajouterLettreAchetee(id) {
 function retirerLettreAchetee(id) {
   if (!id) return;
   try {
-    let liste = JSON.parse(localStorage.getItem('lettres_debloquees') || '[]');
+    let liste = JSON.parse(localStorage.getItem('lettres_debloquees_v2') || '[]');
     liste = liste.filter(item => String(item) !== String(id));
-    localStorage.setItem('lettres_debloquees', JSON.stringify(liste));
+    localStorage.setItem('lettres_debloquees_v2', JSON.stringify(liste));
   } catch (e) {
     console.error("Erreur écriture localStorage", e);
   }
