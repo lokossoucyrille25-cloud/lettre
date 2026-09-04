@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      margin: 0;
+      background: #050003;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    canvas {
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="c"></canvas>
+  <script>
+    const canvas = document.getElementById("c");
+    const ctx = canvas.getContext("2d");
+
+    let width = canvas.width = window.innerWidth;
+    let height = canvas.height = window.innerHeight;
+
+    window.addEventListener("resize", () => {
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight;
+    });
+
+    // Formule mathématique du contour du cœur
+    function heartPosition(rad) {
+      return [
+        Math.pow(Math.sin(rad), 3),
+        -(15 * Math.cos(rad) - 5 * Math.cos(2 * rad) - 2 * Math.cos(3 * rad) - Math.cos(4 * rad))
+      ];
+    }
+
+    function scaleAndTranslate(pos, sx, sy, dx, dy) {
+      return [dx + pos[0] * sx, dy + pos[1] * sy];
+    }
+
+    const pointsOrigin = [];
+    const dr = 0.1;
+    for (let i = 0; i < Math.PI * 2; i += dr) {
+      pointsOrigin.push(scaleAndTranslate(heartPosition(i), 210, 13, 0, 0));
+    }
+    for (let i = 0; i < Math.PI * 2; i += dr) {
+      pointsOrigin.push(scaleAndTranslate(heartPosition(i), 150, 9, 0, 0));
+    }
+    for (let i = 0; i < Math.PI * 2; i += dr) {
+      pointsOrigin.push(scaleAndTranslate(heartPosition(i), 90, 5, 0, 0));
+    }
+
+    const heartPointsCount = pointsOrigin.length;
+    const targetPoints = [];
+
+    function pulse(kx, ky) {
+      for (let i = 0; i < pointsOrigin.length; i++) {
+        targetPoints[i] = [
+          kx * pointsOrigin[i][0] + width / 2,
+          ky * pointsOrigin[i][1] + height / 2
+        ];
+      }
+    }
+
+    const particles = [];
+    for (let i = 0; i < heartPointsCount; i++) {
+      const x = Math.random() * width;
+      const y = Math.random() * height;
+      particles[i] = {
+        vx: 0,
+        vy: 0,
+        R: 2,
+        speed: Math.random() + 5,
+        q: ~~(Math.random() * heartPointsCount),
+        D: 2 * (i % 2) - 1,
+        force: 0.2 * Math.random() + 0.7,
+        f: "rgba(255, 20, 70, 0.3)",
+        trace: Array.from({ length: 30 }, () => ({ x, y }))
+      };
+    }
+
+    let time = 0;
+    function loop() {
+      // Fondu arrière-plan pour l'effet de rémanence
+      ctx.fillStyle = "rgba(0,0,0,0.1)";
+      ctx.fillRect(0, 0, width, height);
+
+      // Battement
+      time += 0.05;
+      const k = 1 + 0.15 * Math.sin(time * 3);
+      pulse(k, k);
+
+      ctx.globalCompositeOperation = "lighter";
+
+      for (let i = particles.length - 1; i >= 0; i--) {
+        const u = particles[i];
+        const q = targetPoints[u.q];
+        const dx = u.trace[0].x - q[0];
+        const dy = u.trace[0].y - q[1];
+        const length = Math.sqrt(dx * dx + dy * dy);
+
+        if (10 > length) {
+          if (0.95 < Math.random()) {
+            u.q = ~~(Math.random() * heartPointsCount);
+          } else {
+            if (0.99 < Math.random()) u.D *= -1;
+            u.q += u.D;
+            u.q %= heartPointsCount;
+            if (0 > u.q) u.q += heartPointsCount;
+          }
+        }
+
+        u.vx += (-dx / length) * u.speed;
+        u.vy += (-dy / length) * u.speed;
+        u.trace[0].x += u.vx;
+        u.trace[0].y += u.vy;
+        u.vx *= u.force;
+        u.vy *= u.force;
+
+        for (let k = 0; k < u.trace.length - 1;) {
+          const T = u.trace[k];
+          const N = u.trace[++k];
+          N.x -= 0.4 * (N.x - T.x);
+          N.y -= 0.4 * (N.y - T.y);
+        }
+
+        ctx.fillStyle = u.f;
+        for (let k = 0; k < u.trace.length; k++) {
+          ctx.fillRect(u.trace[k].x, u.trace[k].y, 1, 1);
+        }
+      }
+      requestAnimationFrame(loop);
+    }
+    loop();
+  </script>
+</body>
+</html>

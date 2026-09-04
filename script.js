@@ -2,6 +2,7 @@ import { lettresDeclaration } from './declaration.js';
 import { lettresPardon } from './pardon.js';
 import { lettresAnniversaire } from './anniversaire.js';
 import { lettresDistance } from './distance.js';
+import { startAnimation1, startAnimation2, startAnimation3 } from './animations.js';
 
 // Configuration des catégories
 const CATEGORIES = [
@@ -317,10 +318,84 @@ function fermerModale() {
   document.getElementById("page-catalogue")?.classList.remove("hidden");
 }
 
+let currentAnimationCleanup = null;
+
 function ouvrirEnveloppe() {
-  if (estDebloque) {
-    const env = document.getElementById("envelope");
-    if (env) env.classList.add("open");
+  if (estDebloque && lettreActive) {
+    const modalEl = document.getElementById("letter-modal");
+    if (modalEl) modalEl.classList.add("hidden");
+
+    const reader = document.getElementById("fullscreen-reader");
+    const readerContent = document.getElementById("fullscreen-letter-content");
+    const canvas = document.getElementById("animation-canvas");
+    
+    if (reader && readerContent && canvas) {
+      readerContent.innerHTML = "";
+      const lignes = Array.isArray(lettreActive.lignes) ? lettreActive.lignes : [];
+      
+      const animations = [startAnimation1, startAnimation2, startAnimation3];
+      const animAleatoire = animations[Math.floor(Math.random() * animations.length)];
+      
+      reader.classList.remove("hidden");
+      reader.classList.add("flex");
+      
+      currentAnimationCleanup = animAleatoire(canvas);
+
+      let index = 0;
+      let activeLines = [];
+      let lineIntervalId = null;
+
+      function showNextLine() {
+        if (index >= lignes.length) {
+          if (lineIntervalId) clearInterval(lineIntervalId);
+          return;
+        }
+        
+        const line = lignes[index];
+        const p = document.createElement("p");
+        p.style.opacity = "0";
+        p.className = "line-anim";
+        const txt = getLineText(line);
+        if (isLineHighlighted(line)) {
+          p.innerHTML = `<span class="text-rose-400 font-bold drop-shadow-[0_2px_5px_rgba(0,0,0,1)]">${txt}</span>`;
+        } else {
+          p.innerText = txt;
+        }
+        readerContent.appendChild(p);
+        activeLines.push(p);
+
+        setTimeout(() => {
+          while (readerContent.scrollHeight > readerContent.clientHeight && activeLines.length > 1) {
+            const oldestLine = activeLines.shift();
+            oldestLine.classList.remove("line-anim");
+            oldestLine.classList.add("line-fade-out");
+            setTimeout(() => {
+              if (oldestLine.parentNode) oldestLine.parentNode.removeChild(oldestLine);
+            }, 600);
+          }
+        }, 50);
+
+        index++;
+      }
+
+      setTimeout(() => {
+        showNextLine();
+        lineIntervalId = setInterval(showNextLine, 2000);
+      }, 500);
+
+      const dureeTotale = (lignes.length * 2000) + 8000;
+      
+      setTimeout(() => {
+        if (lineIntervalId) clearInterval(lineIntervalId);
+        if (currentAnimationCleanup) currentAnimationCleanup();
+        currentAnimationCleanup = null;
+        
+        reader.classList.add("hidden");
+        reader.classList.remove("flex");
+        
+        if (modalEl) modalEl.classList.remove("hidden");
+      }, dureeTotale);
+    }
   }
 }
 
@@ -366,78 +441,219 @@ function mettreAJourUIModale() {
   } else {
     locked?.classList.remove("hidden");
     unlocked?.classList.add("hidden");
+    modalEl?.classList.add("bg-slate-950/90");
+    modalEl?.classList.remove("bg-slate-950");
   }
 }
 
-// --- EXPORT HTML & PARTAGE ---
+class CanvasTextRenderer {
+  constructor(lignes) {
+    this.lignes = lignes;
+    this.activeLines = [];
+    this.index = 0;
+  }
+  start(intervalMs = 2000) {
+    this.intervalId = setInterval(() => this.showNext(), intervalMs);
+    this.showNext();
+  }
+  stop() {
+    if (this.intervalId) clearInterval(this.intervalId);
+  }
+  showNext() {
+    if (this.index >= this.lignes.length) return;
+    const lineData = this.lignes[this.index];
+    this.activeLines.push({
+      text: getLineText(lineData),
+      isHighlight: isLineHighlighted(lineData),
+      opacity: 0,
+      yOffset: 10,
+      state: 'fading_in',
+      time: Date.now()
+    });
+    this.index++;
+  }
+  draw(ctx, W, H) {
+    let currentFontSize = Math.min(W * 0.06, 40);
+    currentFontSize = Math.max(currentFontSize, 18);
+    
+    ctx.save();
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+    ctx.shadowColor = "rgba(0,0,0,1)";
+    ctx.shadowBlur = 8;
+    ctx.shadowOffsetX = 2;
+    ctx.shadowOffsetY = 2;
+    
+    const lineHeight = currentFontSize * 1.5;
+    const now = Date.now();
+    
+    this.activeLines = this.activeLines.filter(l => l.state !== 'dead');
+    
+    const maxWidth = W * 0.9;
+    let wrappedLines = [];
+    
+    this.activeLines.forEach(line => {
+      ctx.font = line.isHighlight ? `bold ${currentFontSize}px 'Caveat', cursive` : `${currentFontSize}px 'Caveat', cursive`;
+      const words = line.text.split(' ');
+      let currentString = '';
+      const localLines = [];
+      
+      words.forEach(word => {
+        const testLine = currentString + word + ' ';
+        if (ctx.measureText(testLine).width > maxWidth && currentString !== '') {
+          localLines.push(currentString.trim());
+          currentString = word + ' ';
+        } else {
+          currentString = testLine;
+        }
+      });
+      localLines.push(currentString.trim());
+      
+      line.renderLines = localLines;
+      wrappedLines.push(...localLines.map(() => line));
+    });
+    
+    const maxVisibleLines = Math.floor((H * 0.8) / lineHeight);
+    if (wrappedLines.length > maxVisibleLines) {
+      const linesToRemove = wrappedLines.length - maxVisibleLines;
+      let removedCount = 0;
+      for (let i = 0; i < this.activeLines.length; i++) {
+        if (removedCount >= linesToRemove) break;
+        if (this.activeLines[i].state === 'visible' || this.activeLines[i].state === 'fading_in') {
+          this.activeLines[i].state = 'fading_out';
+          this.activeLines[i].time = now;
+        }
+        removedCount += this.activeLines[i].renderLines.length;
+      }
+    }
+    
+    let totalActiveRenderLines = 0;
+    this.activeLines.forEach(line => {
+      const elapsed = now - line.time;
+      if (line.state === 'fading_in') {
+        line.opacity = Math.min(elapsed / 600, 1);
+        line.yOffset = 10 * (1 - line.opacity);
+        if (elapsed > 600) line.state = 'visible';
+      } else if (line.state === 'fading_out') {
+        line.opacity = Math.max(1 - (elapsed / 600), 0);
+        line.yOffset = -10 * (elapsed / 600);
+        if (elapsed > 600) line.state = 'dead';
+      }
+      if (line.state !== 'dead') {
+        totalActiveRenderLines += line.renderLines.length;
+      }
+    });
+    
+    let startY = (H - (totalActiveRenderLines * lineHeight)) / 2 + lineHeight / 2;
+    
+    this.activeLines.forEach(line => {
+      if (line.state === 'dead') return;
+      ctx.globalAlpha = line.opacity;
+      if (line.isHighlight) {
+        ctx.fillStyle = "#fb7185";
+        ctx.font = `bold ${currentFontSize}px 'Caveat', cursive`;
+      } else {
+        ctx.fillStyle = "#ffffff";
+        ctx.font = `${currentFontSize}px 'Caveat', cursive`;
+      }
+      
+      line.renderLines.forEach(rLine => {
+        ctx.fillText(rLine, W / 2, startY + line.yOffset);
+        startY += lineHeight;
+      });
+    });
+    
+    ctx.restore();
+  }
+}
 
-function telechargerLettre() {
-  if (!estDebloque || !lettreActive) return;
+async function telechargerLettre() {
+  if (!estDebloque || !lettreActive) {
+    alert("Vous devez débloquer la lettre avant de pouvoir effectuer cette action.");
+    return;
+  }
+
+  const btn = document.querySelector(`button[onclick="telechargerLettre()"]`);
+  const originalText = btn ? btn.innerHTML : "Télécharger la lettre";
+  if (btn) {
+    btn.innerHTML = `⏳ Préparation de la vidéo...`;
+    btn.disabled = true;
+  }
 
   const lignes = Array.isArray(lettreActive.lignes) ? lettreActive.lignes : [];
-  const partnerName = localStorage.getItem('partnerName');
-  const destinataire = partnerName ? partnerName : (lettreActive.destinataire || 'Mon Amour');
+  const dureeTotale = (lignes.length * 2000) + 8000;
 
-  const contenuHTML = `<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <title>${lettreActive.titre || 'Lettre d\'amour'}</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    body { background-color: #020617; font-family: 'Montserrat', sans-serif; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0; padding: 20px; color: #f8fafc; }
-    .font-cursive { font-family: 'Caveat', cursive; }
-    .scene-enveloppe { position: relative; width: 280px; height: 190px; margin: 30px auto; }
-    .envelope { position: relative; width: 100%; height: 100%; background-color: #be123c; border-radius: 8px; box-shadow: 0 15px 35px rgba(225,29,72,0.3); }
-    .flap { position: absolute; top: 0; left: 0; width: 0; height: 0; border-left: 140px solid transparent; border-right: 140px solid transparent; border-top: 105px solid #9f1239; transform-origin: top; transition: transform 0.5s ease-in-out, z-index 0.5s ease-in-out; z-index: 4; }
-    .pocket { position: absolute; bottom: 0; left: 0; width: 0; height: 0; border-left: 140px solid #e11d48; border-right: 140px solid #e11d48; border-bottom: 95px solid #f43f5e; border-top: 95px solid transparent; border-radius: 0 0 8px 8px; z-index: 3; }
-    .letter { position: absolute; bottom: 8px; left: 10px; width: 260px; height: 170px; background: #fff1f2; color: #1e293b; border-radius: 6px; padding: 14px; font-family: 'Caveat', cursive; font-size: 1.15rem; transition: transform 0.6s ease-in-out 0.2s, z-index 0.6s ease-in-out 0.2s; z-index: 2; display: flex; flex-direction: column; justify-content: space-between; text-align: center; overflow-y: auto; }
-    .envelope.open .flap { transform: rotateX(180deg); z-index: 1; }
-    .envelope.open .letter { transform: translateY(-115px); z-index: 3; }
-    @keyframes fadeInUpLine { 0% { opacity: 0; transform: translateY(10px); } 100% { opacity: 1; transform: translateY(0); } }
-    .envelope.open .line-anim { animation: fadeInUpLine 0.6s ease-out forwards; }
-  </style>
-</head>
-<body>
-  <div class="text-center max-w-sm">
-    <h1 class="font-cursive text-4xl text-rose-400 mb-1">${lettreActive.titre || 'Lettre d\'amour'}</h1>
-    <div class="scene-enveloppe">
-      <div id="envelope" class="envelope">
-        <div class="flap"></div>
-        <div class="letter">
-          <div class="text-left text-[9px] font-sans text-rose-800 font-bold uppercase">À : ${destinataire}</div>
-          <div class="space-y-1 my-auto text-base">
-            ${lignes.map((l, index) => `<p class="line-anim" style="opacity: 0; animation-delay: ${0.8 + (index * 0.2)}s">${isLineHighlighted(l) ? `<span class="bg-rose-200 text-rose-900 px-1 py-0.5 rounded font-bold">${getLineText(l)}</span>` : getLineText(l)}</p>`).join('')}
-          </div>
-          <div class="text-right text-[9px] font-sans text-rose-800 font-bold uppercase">De : ${lettreActive.expediteur || 'Ton Âme Sœur'}</div>
-        </div>
-        <div class="pocket"></div>
-      </div>
-    </div>
-    <div class="flex gap-3 justify-center">
-      <button onclick="document.getElementById('envelope').classList.add('open')" class="py-2 px-6 bg-rose-600 text-white font-semibold rounded-xl text-xs">💌 Ouvrir</button>
-      <button onclick="document.getElementById('envelope').classList.remove('open')" class="py-2 px-6 bg-slate-800 text-slate-300 font-semibold rounded-xl text-xs">🔒 Fermer</button>
-    </div>
-  </div>
-</body>
-</html>`;
+  const canvas = document.createElement("canvas");
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+  canvas.style.position = 'fixed';
+  canvas.style.opacity = '0';
+  canvas.style.pointerEvents = 'none';
+  canvas.style.zIndex = '-9999';
+  document.body.appendChild(canvas);
 
-  const blob = new Blob([contenuHTML], { type: "text/html;charset=utf-8;" });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement("a");
-  a.href = url;
-  a.download = `lettre-amour-${lettreActive.id}.html`;
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
-  URL.revokeObjectURL(url);
+  const textRenderer = new CanvasTextRenderer(lignes);
   
-  // Rebloquer la lettre après téléchargement
-  setTimeout(reverrouillerLettre, 1500);
+  const animations = [startAnimation1, startAnimation2, startAnimation3];
+  const animAleatoire = animations[Math.floor(Math.random() * animations.length)];
+  
+  const cleanupAnim = animAleatoire(canvas, (ctx, W, H) => {
+    textRenderer.draw(ctx, W, H);
+  });
+  textRenderer.start(2000);
+
+  const stream = canvas.captureStream(30);
+  let options = { mimeType: 'video/webm; codecs=vp9' };
+  if (!MediaRecorder.isTypeSupported(options.mimeType)) {
+    options = { mimeType: 'video/webm' };
+  }
+  
+  const recorder = new MediaRecorder(stream, options);
+  const chunks = [];
+  recorder.ondataavailable = e => { if(e.data && e.data.size > 0) chunks.push(e.data); };
+  
+  recorder.onstop = () => {
+    cleanupAnim();
+    textRenderer.stop();
+    document.body.removeChild(canvas);
+
+    const blob = new Blob(chunks, { type: options.mimeType || 'video/webm' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    // Download as .webm
+    a.download = `lettre-amour-${lettreActive.id}.webm`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+    
+    if (btn) {
+      btn.innerHTML = originalText;
+      btn.disabled = false;
+    }
+    setTimeout(reverrouillerLettre, 1500);
+  };
+
+  recorder.start();
+
+  let elapsed = 0;
+  const progressInt = setInterval(() => {
+    elapsed += 1000;
+    const percent = Math.min(Math.round((elapsed / dureeTotale) * 100), 100);
+    if (btn) btn.innerHTML = `🎥 Enregistrement... ${percent}%`;
+    if (elapsed >= dureeTotale) {
+      clearInterval(progressInt);
+      recorder.stop();
+    }
+  }, 1000);
 }
 
 function partagerSurWhatsApp() {
+  if (!estDebloque || !lettreActive) {
+    alert("Vous devez débloquer la lettre avant de pouvoir effectuer cette action.");
+    return;
+  }
   const shareUrl = window.location.origin + window.location.pathname + '?lettre=' + (lettreActive ? lettreActive.id : '');
   const msg = `J'ai créé une lettre d'amour animée pour toi ! 💌 Ouvre-la ici : ${shareUrl}`;
   window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(msg)}`, "_blank");
@@ -461,21 +677,11 @@ window.telechargerLettre = telechargerLettre;
 window.partagerSurWhatsApp = partagerSurWhatsApp;
 window.payerAvecChariow = payerAvecChariow;
 
-async function payerAvecChariow() {
+function payerAvecChariow() {
   const btn = document.getElementById("btn-payer");
   const originalText = btn ? btn.innerHTML : "Débloquer avec Chariow";
   
-  const prenom = document.getElementById('input-prenom')?.value.trim();
-  const nom = document.getElementById('input-nom')?.value.trim();
-  const email = document.getElementById('input-email')?.value.trim();
-  const country = document.getElementById('input-country')?.value.trim();
-  const phone = document.getElementById('input-phone')?.value.trim();
   const partner = document.getElementById('input-partner')?.value.trim();
-
-  if (!prenom || !nom || !email || !country || !phone) {
-    alert("Veuillez remplir tous les champs obligatoires.");
-    return;
-  }
 
   if (btn) {
     btn.innerHTML = `<svg class="animate-spin h-5 w-5 mx-auto text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>`;
@@ -492,41 +698,8 @@ async function payerAvecChariow() {
     localStorage.setItem('partnerName', partner);
   }
 
-  try {
-    const response = await fetch('/api/creer-checkout', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        letterId: targetId,
-        prenom,
-        nom,
-        email,
-        country,
-        phone,
-        partner
-      })
-    });
-
-    const data = await response.json();
-
-    if (data.success && data.payment_url) {
-      window.location.href = data.payment_url;
-    } else {
-      console.error("Erreur API:", data);
-      alert("Erreur d'initialisation du paiement: " + (data.message || "inconnue"));
-      if (btn) {
-        btn.innerHTML = originalText;
-        btn.disabled = false;
-      }
-    }
-  } catch (error) {
-    console.error("Erreur réseau:", error);
-    alert("Impossible de contacter le serveur de paiement.");
-    if (btn) {
-      btn.innerHTML = originalText;
-      btn.disabled = false;
-    }
-  }
+  // Redirection directe vers le lien de paiement statique
+  window.location.href = "https://mkiewzpt.mychariow.market/prd_zjdp8n4p/checkout";
 }
 
 function initApp() {
