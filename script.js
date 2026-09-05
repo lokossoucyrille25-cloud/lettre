@@ -594,7 +594,7 @@ function partagerSurWhatsApp() {
     alert("Vous devez débloquer la lettre avant de pouvoir effectuer cette action.");
     return;
   }
-  const shareUrl = window.location.origin + window.location.pathname + '?lettre=' + (lettreActive ? lettreActive.id : '');
+  const shareUrl = window.location.origin + window.location.pathname + '?lettre=' + (lettreActive ? lettreActive.id : '') + '&open=1';
   const msg = `J'ai créé une lettre d'amour animée pour toi ! 💌 Ouvre-la ici : ${shareUrl}`;
   window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(msg)}`, "_blank");
   
@@ -646,7 +646,18 @@ function initApp() {
     const lettreId = urlParams.get('lettre');
     setTimeout(() => {
       afficherPage('catalogue');
-      ouvrirModaleAvecLettre(lettreId);
+      
+      if (urlParams.has('open') || urlParams.has('share')) {
+         estDebloque = true;
+         lettreActive = trouverLettreParId(lettreId);
+         if (lettreActive) {
+           ouvrirEnveloppe();
+         } else {
+           ouvrirModaleAvecLettre(lettreId);
+         }
+      } else {
+         ouvrirModaleAvecLettre(lettreId);
+      }
     }, 100);
   }
 }
