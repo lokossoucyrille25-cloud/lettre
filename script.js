@@ -276,30 +276,6 @@ function ouvrirModaleAvecLettre(id) {
   const partnerName = localStorage.getItem('partnerName');
   const destinataire = partnerName ? partnerName : (lettreActive.destinataire || 'Mon Amour');
 
-  const destEl = document.getElementById("letter-dest");
-  if (destEl) destEl.innerText = `À : ${destinataire}`;
-
-  const senderEl = document.getElementById("letter-sender");
-  if (senderEl) senderEl.innerText = `De : ${lettreActive.expediteur || 'Ton Âme Sœur'}`;
-
-  const body = document.getElementById("letter-body");
-  if (body) {
-    body.innerHTML = "";
-    const lignes = Array.isArray(lettreActive.lignes) ? lettreActive.lignes : [];
-    lignes.forEach((line, index) => {
-      const p = document.createElement("p");
-      p.style.opacity = "0";
-      p.style.animationDelay = `${0.8 + (index * 0.2)}s`;
-      p.className = "line-anim";
-      const txt = getLineText(line);
-      if (isLineHighlighted(line)) {
-        p.innerHTML = `<span class="bg-rose-200 text-rose-900 px-1 py-0.5 rounded font-bold">${txt}</span>`;
-      } else {
-        p.innerText = txt;
-      }
-      body.appendChild(p);
-    });
-  }
 
   mettreAJourUIModale();
 
