@@ -113,25 +113,23 @@ function verifierRetourPaiement() {
     return;
   }
 
-  const cameFromChariow = document.referrer && document.referrer.includes('chariow.com');
-  const paymentStarted = localStorage.getItem('payment_started') === 'true';
-
-  // Détection souple du paramètre de retour dans l'URL pour la fenêtre principale
+  // Détection stricte d'un paiement RÉUSSI
+  const status = urlParams.get('status') || urlParams.get('etat');
+  const isSuccessStatus = status === 'success' || status === 'completed' || status === 'paid' || status === 'reussi';
+  
   const hasPayeParam = urlParams.has('paye') || 
                        urlParams.has('succes') || 
-                       urlParams.has('status') || 
                        urlParams.has('transaction_id') ||
+                       isSuccessStatus ||
                        window.location.search.includes('paye') ||
-                       localStorage.getItem('just_paid') === 'true' ||
-                       cameFromChariow ||
-                       paymentStarted;
+                       window.location.search.includes('success');
+
+  // Nettoyage systématique du flag started, qu'on ait réussi ou annulé
+  localStorage.removeItem('payment_started');
 
   if (hasPayeParam) {
-    const letterIdFromUrl = urlParams.get('letterId');
+    const letterIdFromUrl = urlParams.get('letterId') || urlParams.get('ref');
     const pendingLetterId = localStorage.getItem('pending_letter_id') || sessionStorage.getItem('pending_letter_id');
-
-    // Nettoyage immédiat du flag pour éviter un déblocage en boucle à chaque visite
-    localStorage.removeItem('payment_started');
 
     // 1. Récupération de l'ID avec résolution du fallback exact
     let targetLetterId = letterIdFromUrl || pendingLetterId || "1";
@@ -635,8 +633,8 @@ function payerAvecChariow() {
   sessionStorage.setItem('pending_letter_id', targetId);
   localStorage.setItem('payment_started', 'true');
 
-  // Redirection directe vers le lien de paiement statique
-  window.location.href = "https://mkiewzpt.mychariow.market/prd_zjdp8n4p/checkout";
+  // Redirection avec l'ID de la lettre en paramètre pour le récupérer au retour
+  window.location.href = "https://mkiewzpt.mychariow.market/prd_zjdp8n4p/checkout?letterId=" + encodeURIComponent(targetId) + "&ref=" + encodeURIComponent(targetId);
 }
 
 function initApp() {
