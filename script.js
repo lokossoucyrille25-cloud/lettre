@@ -294,46 +294,174 @@ function fermerModale() {
 
 let currentAnimationCleanup = null;
 
-function ouvrirEnveloppe() {
-  if (estDebloque && lettreActive) {
-    const modalEl = document.getElementById("letter-modal");
-    if (modalEl) modalEl.classList.add("hidden");
+// --- SÉLECTEUR DE MUSIQUE ---
 
-    const reader = document.getElementById("fullscreen-reader");
-    const readerContent = document.getElementById("fullscreen-letter-content");
-    const canvas = document.getElementById("animation-canvas");
-    
-    if (reader && readerContent && canvas) {
-      readerContent.innerHTML = "";
-      const lignes = Array.isArray(lettreActive.lignes) ? lettreActive.lignes : [];
-      
-      const animations = [startAnimation1, startAnimation2, startAnimation3];
-      let currentAnimIndex = parseInt(localStorage.getItem('anim_index') || '0', 10);
-      const animAleatoire = animations[currentAnimIndex % animations.length];
-      localStorage.setItem('anim_index', (currentAnimIndex + 1).toString());
-      
-      reader.classList.remove("hidden");
-      reader.classList.add("flex");
-      
-      const textRenderer = new CanvasTextRenderer(lignes);
-      currentAnimationCleanup = animAleatoire(canvas, (ctx, W, H) => {
-        textRenderer.draw(ctx, W, H);
-      });
-      textRenderer.start(2000);
+function choisirMusiqueEtAnimer(callback) {
+  // Supprimer tout overlay existant
+  const existing = document.getElementById('music-picker-overlay');
+  if (existing) existing.remove();
 
-      const dureeTotale = (lignes.length * 2000) + 8000;
-      
-      setTimeout(() => {
-        if (currentAnimationCleanup) currentAnimationCleanup();
-        textRenderer.stop();
-        currentAnimationCleanup = null;
-        
-        reader.classList.add("hidden");
-        reader.classList.remove("flex");
-        
-        if (modalEl) modalEl.classList.remove("hidden");
-      }, dureeTotale);
+  const overlay = document.createElement('div');
+  overlay.id = 'music-picker-overlay';
+  overlay.style.cssText = [
+    'position:fixed', 'inset:0', 'z-index:99999',
+    'background:rgba(5,0,15,0.92)',
+    'display:flex', 'align-items:center', 'justify-content:center',
+    'backdrop-filter:blur(12px)', '-webkit-backdrop-filter:blur(12px)',
+    'padding:1rem'
+  ].join(';');
+
+  overlay.innerHTML = `
+    <div style="
+      background: linear-gradient(145deg, #1a0a2e, #0f0a1e);
+      border: 1px solid rgba(236,72,153,0.35);
+      border-radius: 24px;
+      padding: 2rem 1.5rem;
+      max-width: 360px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 0 60px rgba(139,92,246,0.2), 0 25px 50px rgba(0,0,0,0.6);
+    ">
+      <div style="font-size:3.5rem; margin-bottom:0.75rem; line-height:1;">🎵</div>
+      <h2 style="
+        color: #f9a8d4;
+        font-family: 'Caveat', cursive;
+        font-size: 2rem;
+        margin: 0 0 0.4rem 0;
+        line-height: 1.2;
+      ">Ajoute une musique</h2>
+      <p style="
+        color: #94a3b8;
+        font-size: 0.8rem;
+        margin: 0 0 1.75rem 0;
+        line-height: 1.5;
+      ">Choisis une chanson depuis ton appareil.<br>L'animation jouera jusqu'à la fin de la musique.</p>
+
+      <label style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.6rem;
+        cursor: pointer;
+        background: linear-gradient(135deg, #ec4899, #8b5cf6);
+        border: none;
+        border-radius: 14px;
+        padding: 1rem 1.2rem;
+        margin-bottom: 0.75rem;
+        color: white;
+        font-weight: 700;
+        font-size: 1rem;
+        width: 100%;
+        min-height: 52px;
+        box-shadow: 0 4px 24px rgba(236,72,153,0.45);
+        transition: opacity 0.15s, transform 0.1s;
+      ">
+        🎵 Choisir musique
+        <input type="file" accept="audio/*" id="music-file-input" style="display:none;">
+      </label>
+
+      <button id="music-skip-btn" style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 0.75rem;
+        background: rgba(51,65,85,0.6);
+        color: #94a3b8;
+        border: 1px solid rgba(100,116,139,0.25);
+        border-radius: 12px;
+        cursor: pointer;
+        font-size: 0.82rem;
+        min-height: 44px;
+      ">Sans musique — continuer quand même</button>
+    </div>
+  `;
+
+  document.body.appendChild(overlay);
+
+  const fileInput = overlay.querySelector('#music-file-input');
+  const skipBtn = overlay.querySelector('#music-skip-btn');
+
+  // Dès qu'un fichier est sélectionné → ferme l'overlay et lance l'action
+  fileInput.addEventListener('change', (e) => {
+    const selectedFile = e.target.files[0];
+    if (selectedFile) {
+      overlay.remove();
+      callback(selectedFile);
     }
+  });
+
+  // Continuer sans musique
+  skipBtn.addEventListener('click', () => {
+    overlay.remove();
+    callback(null);
+  });
+}
+
+function ouvrirEnveloppe() {
+  if (!estDebloque || !lettreActive) return;
+  choisirMusiqueEtAnimer((musicFile) => {
+    _lancerAnimationLettre(musicFile);
+  });
+}
+
+function _lancerAnimationLettre(musicFile) {
+  const modalEl = document.getElementById("letter-modal");
+  if (modalEl) modalEl.classList.add("hidden");
+
+  const reader = document.getElementById("fullscreen-reader");
+  const readerContent = document.getElementById("fullscreen-letter-content");
+  const canvas = document.getElementById("animation-canvas");
+
+  if (!reader || !readerContent || !canvas) {
+    if (modalEl) modalEl.classList.remove("hidden");
+    return;
+  }
+
+  readerContent.innerHTML = "";
+  const lignes = Array.isArray(lettreActive.lignes) ? lettreActive.lignes : [];
+
+  const animations = [startAnimation1, startAnimation2, startAnimation3];
+  let currentAnimIndex = parseInt(localStorage.getItem('anim_index') || '0', 10);
+  const animAleatoire = animations[currentAnimIndex % animations.length];
+  localStorage.setItem('anim_index', (currentAnimIndex + 1).toString());
+
+  reader.classList.remove("hidden");
+  reader.classList.add("flex");
+
+  const textRenderer = new CanvasTextRenderer(lignes);
+  currentAnimationCleanup = animAleatoire(canvas, (ctx, W, H) => {
+    textRenderer.draw(ctx, W, H);
+  });
+
+  const stopAnimation = () => {
+    if (currentAnimationCleanup) currentAnimationCleanup();
+    textRenderer.stop();
+    currentAnimationCleanup = null;
+    reader.classList.add("hidden");
+    reader.classList.remove("flex");
+    // La lettre reste débloquée — on réaffiche juste la modale
+    if (modalEl) modalEl.classList.remove("hidden");
+  };
+
+  if (musicFile) {
+    // Mode avec musique choisie par l'utilisateur
+    const audioUrl = URL.createObjectURL(musicFile);
+    const audioEl = new Audio(audioUrl);
+    audioEl.play().catch(e => console.warn("Lecture audio:", e));
+
+    // Animation en boucle jusqu'à la fin de la musique
+    textRenderer.start(2000, true);
+
+    audioEl.addEventListener('ended', () => {
+      URL.revokeObjectURL(audioUrl);
+      stopAnimation();
+    });
+  } else {
+    // Mode sans musique — durée fixe basée sur les lignes
+    textRenderer.start(2000, false);
+    const dureeTotale = (lignes.length * 2000) + 8000;
+    setTimeout(stopAnimation, dureeTotale);
   }
 }
 
@@ -390,7 +518,8 @@ class CanvasTextRenderer {
     this.activeLines = [];
     this.index = 0;
   }
-  start(intervalMs = 2000) {
+  start(intervalMs = 2000, loop = false) {
+    this._loop = loop;
     this.intervalId = setInterval(() => this.showNext(), intervalMs);
     this.showNext();
   }
@@ -398,7 +527,15 @@ class CanvasTextRenderer {
     if (this.intervalId) clearInterval(this.intervalId);
   }
   showNext() {
-    if (this.index >= this.lignes.length) return;
+    if (this.index >= this.lignes.length) {
+      if (this._loop) {
+        // Boucle : recommence depuis le début
+        this.index = 0;
+        this.activeLines = [];
+      } else {
+        return;
+      }
+    }
     const lineData = this.lignes[this.index];
     this.activeLines.push({
       text: getLineText(lineData),
@@ -510,7 +647,13 @@ async function telechargerLettre() {
     alert("Vous devez débloquer la lettre avant de pouvoir effectuer cette action.");
     return;
   }
+  // Afficher le sélecteur de musique avant d'enregistrer
+  choisirMusiqueEtAnimer((musicFile) => {
+    _enregistrerVideoAvecMusique(musicFile);
+  });
+}
 
+async function _enregistrerVideoAvecMusique(musicFile) {
   const btn = document.querySelector(`button[onclick="telechargerLettre()"]`);
   const originalText = btn ? btn.innerHTML : "Télécharger la lettre";
   if (btn) {
@@ -524,54 +667,74 @@ async function telechargerLettre() {
   const canvas = document.createElement("canvas");
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
-  canvas.style.position = 'fixed';
-  canvas.style.opacity = '0';
-  canvas.style.pointerEvents = 'none';
-  canvas.style.zIndex = '-9999';
+  canvas.style.cssText = 'position:fixed;opacity:0;pointer-events:none;z-index:-9999;';
   document.body.appendChild(canvas);
 
   const textRenderer = new CanvasTextRenderer(lignes);
-  
+
   const animations = [startAnimation1, startAnimation2, startAnimation3];
   let currentAnimIndex = parseInt(localStorage.getItem('anim_index') || '0', 10);
   const animAleatoire = animations[currentAnimIndex % animations.length];
   localStorage.setItem('anim_index', (currentAnimIndex + 1).toString());
-  
+
   const cleanupAnim = animAleatoire(canvas, (ctx, W, H) => {
     textRenderer.draw(ctx, W, H);
   });
-  textRenderer.start(2000);
+  textRenderer.start(2000, false);
 
   const stream = canvas.captureStream(30);
+
+  // Gestion de la musique choisie par l'utilisateur
+  let audioEl = null;
+  let audioUrl = null;
+  if (musicFile) {
+    try {
+      audioUrl = URL.createObjectURL(musicFile);
+      audioEl = new Audio(audioUrl);
+      audioEl.play().catch(e => console.warn("Audio:", e));
+
+      const audioCtxDl = new (window.AudioContext || window.webkitAudioContext)();
+      const srcNode = audioCtxDl.createMediaElementSource(audioEl);
+      const destNode = audioCtxDl.createMediaStreamDestination();
+      srcNode.connect(destNode);
+      srcNode.connect(audioCtxDl.destination);
+      destNode.stream.getAudioTracks().forEach(t => stream.addTrack(t));
+    } catch (err) {
+      console.warn("Capture audio non supportée:", err);
+    }
+  }
+
   let options = { mimeType: 'video/webm; codecs=vp9' };
   if (!MediaRecorder.isTypeSupported(options.mimeType)) {
     options = { mimeType: 'video/webm' };
   }
-  
+
   const recorder = new MediaRecorder(stream, options);
   const chunks = [];
-  recorder.ondataavailable = e => { if(e.data && e.data.size > 0) chunks.push(e.data); };
-  
+  recorder.ondataavailable = e => { if (e.data && e.data.size > 0) chunks.push(e.data); };
+
   recorder.onstop = () => {
     cleanupAnim();
     textRenderer.stop();
+    if (audioEl) { audioEl.pause(); }
+    if (audioUrl) URL.revokeObjectURL(audioUrl);
     document.body.removeChild(canvas);
 
     const blob = new Blob(chunks, { type: options.mimeType || 'video/webm' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    // Download as .webm
     a.download = `lettre-amour-${lettreActive.id}.webm`;
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
-    
+
     if (btn) {
       btn.innerHTML = originalText;
       btn.disabled = false;
     }
+    // Reverrouillage uniquement après téléchargement
     setTimeout(reverrouillerLettre, 1500);
   };
 
