@@ -357,7 +357,7 @@ function choisirMusiqueEtAnimer(callback) {
         transition: opacity 0.15s, transform 0.1s;
       ">
         🎵 Choisir musique
-        <input type="file" accept="audio/*" id="music-file-input" style="display:none;">
+        <input type="file" accept="audio/*, .mp3, .wav, .m4a, .flac, .aac, .ogg" id="music-file-input" style="display:none;">
       </label>
 
       <button id="music-skip-btn" style="
@@ -386,6 +386,13 @@ function choisirMusiqueEtAnimer(callback) {
   fileInput.addEventListener('change', (e) => {
     const selectedFile = e.target.files[0];
     if (selectedFile) {
+      // Double vérification stricte côté JS pour bloquer les vidéos (iOS/Android workaround)
+      if (!selectedFile.type.startsWith('audio/') && !selectedFile.name.match(/\.(mp3|wav|m4a|flac|aac|ogg)$/i)) {
+        alert("Erreur : Veuillez sélectionner uniquement un fichier audio (musique). Les vidéos ne sont pas autorisées.");
+        e.target.value = ''; // Réinitialise l'input
+        return;
+      }
+      
       overlay.remove();
       callback(selectedFile);
     }
